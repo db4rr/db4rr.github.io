@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_SOAP" xml:lang="en-US" class="- topic/topic       reference/reference ">
+  <title class="- topic/title "><term conkeyref="IntGloss/SOAP" class="- topic/term "/> ingredients</title>
+  <shortdesc class="- topic/shortdesc "><term conkeyref="IntGloss/SOAP" class="- topic/term "/> is the preferred medium for cleansing a <term conkeyref="IntGloss/THING" class="- topic/term "/> and satisfying its hygienic requirements.</shortdesc>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <ul id="ul_asg_x1y_zv" class="- topic/ul ">
+        <li class="- topic/li ">Water</li>
+        <li class="- topic/li ">Olive oil</li>
+        <li class="- topic/li ">Palm kernel oil (copra oil)</li>
+        <li class="- topic/li ">Vegetable glycerin</li>
+      </ul>
+    </section>
+  </refbody>
+</reference>

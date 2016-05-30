@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map class="- map/map ">
+ <title class="- topic/title ">SOAP glossary</title>
+ <keydef keys="g_aleppo" type="glossentry" href="g_aleppo.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_bialyjelen" type="glossentry" href="g_bialyjelen.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_borax" type="glossentry" href="g_borax.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_bubble" type="glossentry" href="g_bubble.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_cacharro" type="glossentry" href="../../../../../../recycled/2016/May/30/commit_f5f1ac1d-dffb-40c6-8af9-810c1787544d/repositories/master/sandbox/documents/DBF/Glossary/g_cacharro.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_castile" type="glossentry" href="g_castile.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_detergent" type="glossentry" href="g_detergent.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_foam" type="glossentry" href="g_foam.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_gizmo" type="glossentry" href="g_gizmo.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_grat" type="glossentry" href="../../../../../../recycled/2016/May/30/commit_df573ed5-98a0-4a8d-af7d-b151d4281c90/repositories/master/sandbox/documents/DBF/Glossary/g_grat.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_lathe" type="glossentry" href="g_lathe.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_lye" type="glossentry" href="g_lye.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_marseille" type="glossentry" href="g_marseille.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_offenbach" type="glossentry" href="g_offenbach.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_shampoo" type="glossentry" href="g_shampoo.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_sodium_stearate" type="glossentry" href="g_sodium_stearate.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_surfactant" type="glossentry" href="g_surfactant.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_telar" type="glossentry" href="../../../../../../recycled/2016/May/30/commit_ae66fc3f-33d5-4fcf-bd7f-96aa6292debc/repositories/master/sandbox/documents/DBF/Glossary/g_telar.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_thingamajig" type="glossentry" href="g_thingamajig.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_whatchamacallit" type="glossentry" href="g_whatchamacallit.xml" class="+ map/topicref mapgroup-d/keydef "/>
+ <keydef keys="g_widget" type="glossentry" href="g_widget.xml" class="+ map/topicref mapgroup-d/keydef "/>
+</map>

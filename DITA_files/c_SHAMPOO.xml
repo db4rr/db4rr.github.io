@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_mkz_m54_bw" xml:lang="en-US" class="- topic/topic concept/concept ">
+ <title class="- topic/title "><term keyref="g_widget" class="- topic/term "/> hygiene</title>
+ <shortdesc class="- topic/shortdesc ">Your <term keyref="g_widget" class="- topic/term "/> has specific haircare requirements.</shortdesc>
+ <conbody class="- topic/body  concept/conbody ">
+  <ul class="- topic/ul ">
+   <li class="- topic/li ">You shall regularly cleanse your <term keyref="g_widget" class="- topic/term "/> using <term keyref="g_shampoo" class="- topic/term "/>.</li>
+   <li class="- topic/li ">Never repeat the name of your <term keyref="g_widget" class="- topic/term "/> three times in front of a mirror.</li>
+  </ul>
+ </conbody>
+</concept>

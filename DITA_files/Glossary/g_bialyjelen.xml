@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="glossentry_mcx_3hp_yv" xml:lang="en-US" class="- topic/topic concept/concept glossentry/glossentry ">
+    <glossterm class="- topic/title concept/title glossentry/glossterm ">Biały Jeleń</glossterm>
+	<!--For entries with only an abbreviation (no definition), remove the <glossdef> element. Example: HTML-->
+	<!--For entries with only a definition, remove all <glossAlt> elements. Example: UltraViolet-->
+	<!--Don't remove <glossSynonym> element. It is the entryhead for this glossary entry at the end of your PDF.-->
+    <glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">A soap produced by Biały Jeleń company.</glossdef>
+	<glossBody class="- topic/body concept/conbody glossentry/glossBody ">
+		<glossAlt class="- topic/section concept/section glossentry/glossAlt ">
+			<glossAcronym class="- topic/title concept/title glossentry/glossAcronym ">BJ</glossAcronym>
+		</glossAlt>
+	</glossBody>
+</glossentry>

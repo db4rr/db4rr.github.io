@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map class="- map/map ">
+ <title class="- topic/title ">SOAP example map</title>
+
+<mapref href="Glossary/m_SOAP_glossary.ditamap" class="+ map/topicref mapgroup-d/mapref "/>
+ 
+<topicref href="c_SOAP.xml" class="- map/topicref "/>
+<topicref href="t_SOAP.xml" class="- map/topicref "/>
+<topicref href="r_SOAP.xml" class="- map/topicref "/>
+<topicref href="r_IntGloss.xml" processing-role="resource-only" keys="IntGloss" class="- map/topicref "/>
+</map>

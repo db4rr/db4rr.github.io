@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_SOAP" xml:lang="en-US" class="- topic/topic concept/concept ">
+ <title class="- topic/title "><term conkeyref="IntGloss/THING" class="- topic/term "/> hygiene</title>
+ <shortdesc class="- topic/shortdesc ">Your <term conkeyref="IntGloss/THING" class="- topic/term "/> has very strict hygiene
+  requirements.</shortdesc>
+ <conbody class="- topic/body  concept/conbody ">
+  <ul class="- topic/ul ">
+  <li class="- topic/li ">You shall never expose your <term conkeyref="IntGloss/THING" class="- topic/term "/> under bright light.</li>
+  <li class="- topic/li ">You shall regularly cleanse your <term conkeyref="IntGloss/THING" class="- topic/term "/> using <term conkeyref="IntGloss/SOAP" class="- topic/term "/>.</li>
+  <li class="- topic/li ">Never feed your <term conkeyref="IntGloss/THING" class="- topic/term "/> after midnight.</li>
+  </ul>
+ </conbody>
+</concept>

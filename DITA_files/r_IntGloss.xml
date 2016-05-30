@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="SOAP_intGloss" xml:lang="en-US" class="- topic/topic       reference/reference ">
+  <title class="- topic/title ">Interim Glossary</title>
+  <shortdesc class="- topic/shortdesc ">This topic should be added to your ditamap with @processing-role=<q class="- topic/q ">resource-only</q>
+    and @keys=<q class="- topic/q ">IntGloss</q>. If this topic is included in your output, you have done something
+    wrong.</shortdesc>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section "><!--SOAP--><term id="SOAP" class="- topic/term ">SOAP</term><term conkeyref="IntGloss/SOAP" class="- topic/term "/></section>
+    <section class="- topic/section "><!--THING--><term id="THING" class="- topic/term ">THING</term><term conkeyref="IntGloss/THING" class="- topic/term "/></section>
+  </refbody>
+</reference>

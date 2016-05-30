@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_SHAMPOO" xml:lang="en-US" class="- topic/topic       reference/reference ">
+  <title class="- topic/title "><term keyref="g_shampoo" class="- topic/term "/> ingredients</title>
+  <shortdesc class="- topic/shortdesc "><term keyref="g_shampoo" class="- topic/term "/> is the preferred medium for cleansing a <term id="gizmo" keyref="g_widget" class="- topic/term "/> and satisfying its hygienic requirements. Use <term keyref="g_aleppo" class="- topic/term "/>.
+    No i używaj <term keyref="g_bialyjelen" class="- topic/term "/>.</shortdesc>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">biały Jeleń. biały jeleń.</p>
+      <ul id="ul_asg_x1y_zv" class="- topic/ul ">
+        <li class="- topic/li ">Ammonium lauryl sulfate</li>
+        <li class="- topic/li ">Glycol</li>
+        <li class="- topic/li ">Polysorbate 20</li>
+        <li class="- topic/li ">Methylisothiazolinone</li>
+        <li class="- topic/li ">BJ</li>
+        <li class="- topic/li ">Biały jeleń</li>
+        <li class="- topic/li ">edqd qdwqd</li>
+      </ul>
+      <note class="- topic/note ">Sodium laureth sulfate is not an acceptable <term keyref="g_shampoo" class="- topic/term "/>
+        ingredient.</note>
+    </section>
+  </refbody>
+</reference>
