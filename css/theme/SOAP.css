@@ -222,9 +222,10 @@ body {
 .reveal .right { width: 70%; float: left; }
 
 .reveal .footer-center {
-    position: all;
+    position: fixed;
+    width: 100%;
     text-align: center;
-    bottom: 10;
+    bottom: 0;
 }
 
 /*.reveal div.img { 
