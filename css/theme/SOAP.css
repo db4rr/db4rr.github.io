@@ -92,7 +92,8 @@ body {
 .reveal video,
 .reveal iframe {
   max-width: 95%;
-  max-height: 95%; }
+  max-height: 95%; 
+  text-align: center}
 
 .reveal strong,
 .reveal b {
@@ -217,15 +218,20 @@ body {
 .reveal small * {
   vertical-align: top; }
 
-.reveal div.left  { width: 30%; float: left; text-align: left; }
-.reveal div.right { width: 70%; float: left; }
-.reveal div.clear { clear: both; }
+.reveal .left  { width: 30%; float: left; text-align: left; }
+.reveal .right { width: 70%; float: left; }
 
-.reveal div.img { 
+.reveal .footer-center {
+    position: all;
+    text-align: center;
+    bottom: 10;
+}
+
+/*.reveal div.img { 
    position: relative;
    /*top: -2em;*/ 
-   width: 90%; /* for IE 6 */
-   margin: 2em auto
+   /*width: 90%; /* for IE 6 */
+   /*margin: 2em auto
 }
 
 /*********************************************
@@ -305,7 +311,7 @@ body {
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
-  background: rgba(0, 0, 0, 0.2); }
+  background: rgba(0, 0, 0, 0.1); }
 
 .reveal .progress span {
   background: #e96196;
