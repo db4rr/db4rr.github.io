@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_definitions" xml:lang="en-GB" class="- topic/topic concept/concept ">
+   <title class="- topic/title ">
+      <ph class="- topic/ph ">Definitions</ph>
+   </title>
+   <conbody class="- topic/body  concept/conbody ">
+      <p class="- topic/p ">The following terms are used within this document:</p>
+      <dl class="- topic/dl ">
+         <dlentry class="- topic/dlentry ">
+            <dt class="- topic/dt ">Aleppo soap</dt>
+            <dd class="- topic/dd ">Aleppo soap is Aleppo soap is Aleppo soap.</dd>
+         </dlentry>
+         <dlentry class="- topic/dlentry ">
+            <dt class="- topic/dt ">Biały Jeleń</dt>
+            <dd class="- topic/dd ">A soap produced by the Biały Jeleń company.</dd>
+         </dlentry>
+         <dlentry class="- topic/dlentry ">
+            <dt class="- topic/dt ">Gizmo</dt>
+            <dd class="- topic/dd ">A Gismo is a Gizmo is a Gizmo</dd>
+         </dlentry>
+         <dlentry class="- topic/dlentry ">
+            <dt class="- topic/dt ">Shampoo</dt>
+            <dd class="- topic/dd ">Shampoo is Shampoo is Shampoo.</dd>
+         </dlentry>
+         <dlentry class="- topic/dlentry ">
+            <dt class="- topic/dt ">Widget</dt>
+            <dd class="- topic/dd ">A Widget is a Widget is a Widget.</dd>
+         </dlentry>
+      </dl>
+   </conbody>
+</concept>

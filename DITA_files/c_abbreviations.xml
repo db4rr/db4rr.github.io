@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_abbreviations" xml:lang="en-GB" class="- topic/topic concept/concept ">
+   <title class="- topic/title ">
+      <ph class="- topic/ph ">Acronyms and Abbreviation</ph>
+   </title>
+   <conbody class="- topic/body  concept/conbody ">
+      <p class="- topic/p ">The following acronyms and abbreviations are used within this document.</p>
+      <dl class="- topic/dl ">
+         <dlentry class="- topic/dlentry ">
+            <dt class="- topic/dt ">BJ</dt>
+            <dd class="- topic/dd ">Biały Jeleń</dd>
+         </dlentry>
+         <dlentry class="- topic/dlentry ">
+            <dt class="- topic/dt ">GZ</dt>
+            <dd class="- topic/dd ">Gizmo</dd>
+         </dlentry>
+      </dl>
+   </conbody>
+</concept>

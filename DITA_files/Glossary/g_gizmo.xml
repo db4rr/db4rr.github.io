@@ -6,7 +6,7 @@
 	<glossBody class="- topic/body concept/conbody glossentry/glossBody ">
 		<glossSurfaceForm class="- topic/p concept/p glossentry/glossSurfaceForm "/>
 		<glossAlt class="- topic/section concept/section glossentry/glossAlt ">
-			<glossAcronym class="- topic/title concept/title glossentry/glossAcronym "/>
+			<glossAcronym class="- topic/title concept/title glossentry/glossAcronym ">GZ</glossAcronym>
 		</glossAlt>
 		<glossAlt class="- topic/section concept/section glossentry/glossAlt ">
 			<glossSynonym class="- topic/title concept/title glossentry/glossSynonym "/>
