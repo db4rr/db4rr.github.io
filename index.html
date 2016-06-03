@@ -52,6 +52,13 @@
 					<p>
 						<a href="mailto:dbarr@dolby.com">Daniel Barrio Fierro</a> / <a href="mailto:wojciech.baranowski@dolby.com">Wojciech Baranowski</a>
 					</p>
+					<aside class="notes">
+        				Hello soapers! I have some good news and some bad news. Bad news: at the end of ppt you we are NOT going to show you how to assemble an atomic bomg. Good news: this is the presentation all you geeks have been waiting for. YES, finally someone is going to show you some code.
+        				This is my colleague Wojtek // And this is Daniel, we both work together at Dolby labs, and today we're here to bring a different perspective to the guiding theme of the conference. //
+
+        			We've heard this couple of days about bridging the disconnect between us and them -- techcomms/tech writers and our customers, our SMEs, our product owners... but what about the gap between us and our tools?
+
+    				</aside>
 				</section>
 
 <!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
@@ -60,7 +67,7 @@
 					<h2>Our stack:</h2>
 					<h3><ul>
 							<li>DITA OT</li>
-							<li>&lt;oXygen/&gt;XML</li>
+							<li>&lt;oXygen/&gt; XML</li>
 							<li>easyDITA</li>
 						</ul>
 					</h3>
@@ -69,6 +76,40 @@
 					<aside class="notes">
         				We assume the CMS/CCMS does not add ”noise” to the XML. Our CMS does not automatically add IDs to elements.
     				</aside>
+				</section>
+
+<!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
+
+				<section>
+					<!-- WHAT IS A GLOSSARY? -->
+					<div class="img">
+					<h4>Glossaries?</h4>
+					<img width=100% height=100% data-src="images/WHY.gif" alt="GLOSSARIES?">
+					</div>
+					<aside class="notes">
+						//alphabetical list of terms with a standardized definition within a particular domain of knowledge<br>
+						//bring consistency to our deliverables
+						//Glossary is REUSED on all deliverables and ACROSS THE COMPANY (marketing, etc)
+						//define them once, that definition is valid everywhere
+						//presented in the same way accross all deliverables (spelling, capitalization, acronyms...)
+						//Plus fancy stuff Out-of-the-box with DITA (html hover texts?)
+					</aside>
+				</section>
+
+<!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
+
+				<section>
+					<div class="left" style="width: 70%">
+						<h5>Aleppo soap</h5>
+						<p><small>Vegetal oil based soap traditionally produced in the city of Aleppo.</small></p>
+						<h5>Castile soap</h5>
+						<p><small>Vegetal oil based soap traditionally produced in the Castilian plains.</small></p>
+						<h5>Marseille soap</h5>
+						<p><small>Vegetal oil based soap traditionally produced in the Marseille area.</small></p>
+					</div>
+					<div class="right" style="width: 30%">
+						<img width=90% height=90% data-src="images/gloss_files.png" alt="gloss_files">
+					</div>
 				</section>
 
 <!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
@@ -83,7 +124,15 @@
 				<h4 style="text-align: left; position: absolute">Glossary</h4>
 				<img width=90% height=90% data-src="images/SOAP_arrow_2.png" alt="Doc_progress">
 				</div>
+				<aside class="notes">
+				But there's more that makes glossaries interesting.
+					WE AUTHOR IN PARALLEL TO PRODUCT DEV. As Kasia Kolodziejczak said yesterday, tis is one of the hardest things to do. So we may develop our doc according to prod milestones, but internally, in TechPubs we also have paralel project lifecycles. one of them is our reused glossary. gloss milestones =/= doc milestones.
+					You may know you have a term, and you want to write content, but the tterm will not be added the gloss immediately. Gloos update can take from days to weeks to months, depending on the particular situation of a given company. (it has to be approved by x smes, by marketing, synch with other toolds...)
+					It may also be that you know what you need to document before your stakeholdesr (PO, marketing) have cristalised naming conventions -- in that case, it is obvious that you need to wait before you can propose a new term.
+				</aside>
 				</section>
+
+
 
 <!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
 
@@ -97,16 +146,13 @@
 						<pre style="font-size: 0.35em;"><code class="xml" data-trim contenteditable>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE glossentry PUBLIC &quot;-//OASIS//DTD DITA Glossary//EN&quot; &quot;glossary.dtd&quot;&gt;
-&lt;glossentry id=&quot;g_shampoo&quot; xml:lang=&quot;en-US&quot;&gt;
- &lt;glossterm&gt;Shampoo&lt;/glossterm&gt;
- &lt;glossdef&gt;Shampoo is Shampoo is Shampoo&lt;/glossdef&gt;
+&lt;glossentry id=&quot;g_soap&quot; xml:lang=&quot;en-US&quot;&gt;
+ &lt;glossterm&gt;SOAP! content conference&lt;/glossterm&gt;
+ &lt;glossdef&gt;SOAP! is the best content conference. Period.&lt;/glossdef&gt;
   &lt;glossBody&gt;
    &lt;glossSurfaceForm/&gt;
 	&lt;glossAlt&gt;
-	 &lt;glossAcronym/&gt;
-	&lt;/glossAlt&gt;
-	&lt;glossAlt&gt;
-	 &lt;glossSynonym/&gt;
+	 &lt;glossAcronym&gt;SOAP!&lt;/glossAcronym&gt;
 	&lt;/glossAlt&gt;
    &lt;/glossBody&gt;
 &lt;/glossentry&gt;
@@ -148,6 +194,58 @@
 				</div>
 				</section>
 <!-- escaping tool: http://www.accessify.com/tools-and-wizards/developer-tools/quick-escape/default.php -->
+
+<!-- ########################################## VERTICAL SLIDES ####################################### -->
+
+<!-- DITA REFRESHER-->
+			<section>
+				<section data-transition="none">
+				<h2>DITA refresher</h2>
+				<div style="text-align: left;">
+					<small><code style="background: #e96196">keys</code>: symbolic name that links an element to a file path</small>
+					<small><code style="background: #e96196">keydef</code>: element used to define the key of an element</small></p>
+					<pre style="width: 85%; text-align: left;"><code class="xml">&lt;keydef keys=&quot;g_aleppo&quot; type=&quot;glossentry&quot; href=&quot;g_aleppo.xml&quot;/&gt;</code></pre>
+					<p><small><code>keyref</code>: indirect link based on keys</small></p>
+					<p><small><code>conkeyref</code>: indirect transclusion based on keys</small></p>
+				</div>
+				<aside class="notes">
+				this section is dangerous, so let us make a quick DITA refresher.
+				transclusion: hypertext feature, inclusion of part of an electronic document into one or more other documents.
+				</aside>
+				</section>
+
+				<section data-transition="none">
+				<h2>DITA refresher</h2>
+				<div style="text-align: left;">
+					<p><code>keys</code>: symbolic name that links an element to a file path</p>
+					<p><code>keydef</code>: element used to define the key of an element</p>
+					<p><code style="background: #e96196">keyref</code>: indirect link based on keys</p>
+					<pre style="width: 85%; text-align: left;"><code class="xml">&lt;term keyref=&quot;g_aleppo&quot;/&gt;</code></pre>
+					<p>conkeyref: indirect transclusion based on keys</p>
+				</div>
+				<aside class="notes">
+				this section is dangerous, so let us make a quick DITA refresher.
+				transclusion: hypertext feature, inclusion of part of an electronic document into one or more other documents.
+				</aside>
+				</section>
+
+				<section data-transition="none">
+				<h2>DITA refresher</h2>
+				<div style="text-align: left;">
+					<p><code>keys</code>: symbolic name that links an element to a file path</p>
+					<p><code>keydef</code>: element used to define the key of an element</p>
+					<p><code>keyref</code>: indirect link based on keys</p>
+					<p><code style="background: #e96196">conkeyref</code>: indirect transclusion based on keys</p>
+					<pre style="width: 85%; text-align: left;"><code class="xml">&lt;term conkeyref=&quot;topic_key/element_id&quot;/&gt;</code></pre>
+				</div>
+				<aside class="notes">
+				this section is dangerous, so let us make a quick DITA refresher.
+				transclusion: hypertext feature, inclusion of part of an electronic document into one or more other documents.
+				</aside>
+				</section>
+			</section>
+
+<!-- ////////////////////////////////////////// END VERTICAL SLIDES ////////////////////////////////////////  -->
 
 <!-- ########################################## VERTICAL SLIDES ####################################### -->
 
@@ -337,7 +435,10 @@
 					<img src="images/SOAP_disconnect.png" width="65%" height="65%">
 				</div>
 				<aside class="notes">
-				We can't synch with GLOSS, but we would like to handle terminology better (we know where a particular Subject Matter Entity goes)</aside>	
+				GLOSSARY IS REUSED
+				We can't synch with GLOSS, but we would like to handle terminology better (we know where a particular Subject Matter Entity goes)
+				PO has not decided OR our candidates are being reviewed... but the content can be written!
+				</aside>	
 				</section>				
 
 <!-- ########################################## VERTICAL SLIDES ####################################### -->
@@ -376,7 +477,7 @@
 					</div>
 				</div>
 				<aside class="notes">
-				LOOK AT THE KEYS</aside>
+				LOOK AT THE KEYS. The conkeyref is added redundantly for ease of use (you just have to copy paste it) // DO DEMO</aside>
 				</section>
 
 				<section data-transition="none"><!-- EXAMPLE MAP WITH INTGLOSS-->
@@ -542,6 +643,31 @@
 
 <!-- ////////////////////////////////////////// END VERTICAL SLIDES ////////////////////////////////////////  -->
 
+<!-- ########################################## VERTICAL SLIDES ####################################### -->
+
+				<section>
+					<section data-transition="none">
+						<div class="img">
+							<h4 style="text-align: left; position: absolute; top:40%; left:22%;">Doc</h4>
+							<h4 style="text-align: left; position: absolute; top:12%; right:22%%;">intGloss</h4>
+							<h4 style="text-align: left; position: absolute; bottom:25%; right:27%;">Gloss</h4>
+							<img src="images/SOAP_synch1.png" width="65%" height="65%">
+						</div>
+						<aside class="notes">Out of synch, because Gloss does not include the terms we need</aside>	
+					</section>
+					<section data-transition="none">
+						<div class="img">
+							<h4 style="text-align: left; position: absolute; top:40%; left:22%;">Doc</h4>
+							<h4 style="text-align: left; position: absolute; top:12%; right:22%%;">intGloss</h4>
+							<h4 style="text-align: left; position: absolute; bottom:25%; right:27%;">Gloss</h4>
+							<img src="images/SOAP_synch2.png" width="65%" height="65%">
+						</div>
+						<aside class="notes">Partial synch, some terms already in Gloss, but intGloss is still needed</aside>
+					</section>
+				</section>
+
+<!-- ////////////////////////////////////////// END VERTICAL SLIDES ////////////////////////////////////////  -->
+
 				<section>
 					<div>
 					<div class="left" style="font-size: 75%">
@@ -552,7 +678,9 @@
 						<br>├┬<code style="background: #e96196">t_SHAMPOO.xml</code>
 						<br>│├─c_SHAMPOO.xml
 						<br>│└─r_SHAMPOO.xml
-						<br>└─r_IntGloss.xml</tree>
+						<br>│
+						<br>├─r_IntGloss.xml
+						<br>└─m_SOAP_glossary.xml</tree>
 					</div>
 					<div class="right">
 						<pre style="font-size: 0.35em;"><code class="xml" data-trim contenteditable>
@@ -615,7 +743,7 @@
 <!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
 
 				<section data-transition="fade-in slide-out">
-					<video src="videos/SOAP_schematron.mp4" muted controls class="slideautostart"></video>
+					<video src="videos/SOAP_schematron.mp4" muted controls ></video>
 					<aside class="notes">As terms are added into the glossary, they should also be added to the schematron. (At some point we would like to automatize this as well)</aside>
 				</section>
 
@@ -661,7 +789,7 @@
 <!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
 
 				<section data-transition="fade-in slide-out">
-					<video src="videos/SOAP_XSLT_1.mp4" muted controls class="slideautostart"></video>
+					<video src="videos/SOAP_XSLT_1.mp4" muted controls </video>
 				</section>
 
 <!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
@@ -675,17 +803,33 @@
 <!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
 
 				<section data-transition="fade-in slide-out">
-					<video src="videos/SOAP_XSLT_2.mp4" muted controls class="slideautostart"></video>
+					<video src="videos/SOAP_XSLT_2.mp4" muted controls </video>
+					<!-- class="slideautostart"> -->
 				</section>
 
 <!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
 
+				<section>
+					<h3>Reuse content</h3>
+					<span class="fragment fade-in"><h3>Reuse effort</h3></span>
+					<span class="fragment fade-in"><h3>Reuse ideas</h3></span>
+					<aside class="notes">
+        				
+    				</aside>
+				</section>
+
+<!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
 				<section>
 					<h2>💖Glossary💖</h2>
 					<small>
 					<p>Slides and materials on <a href="https://github.com/db4rr/SOAP16">github</a></p>
 					<p>XSLT on <a href="w3.org/TR/xslt-30/">W3C</a> and <a href="w3schools.com/xsl/">w3schools</a></p>
 					<p><a href="http://schematron.com">schematron.com</a></p>
+					<aside class="notes">
+						Exactly -- you can find ....
+        				& as I said at the beginning -- We've heard this couple of days about bridging the disconnect between us and them -- techcomms/tech writers and our customers, our SMEs, our product owners... but what about the gap between us and our tools?
+        				Our experience has tought us that there are a lot of low hanging fruits in out-of-the-box DITA environments, and we hope our presentation, our little love story, has given you some interesting ideas. 
+    				</aside>
 					</small>
 				</section>
 
@@ -693,7 +837,8 @@
 
 				<section>
 					<a href="http://soapconf.com"><img data-src="images/SOAP_logo.png" alt="SOAP_logo"></a>
-					<p><small>Got feedback? <a href="mailto:dbarr@dolby.com,wojciech.baranowski@dolby.com">bring it on!</a></small></p>
+					<p><h4>Got feedback? <a href="mailto:dbarr@dolby.com,wojciech.baranowski@dolby.com">bring it on!</a></h4></p>
+					<h4><a href="https://db4rr.github.io">https://db4rr.github.io</a></h4>
 				</section>
 
 <!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
