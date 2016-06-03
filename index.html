@@ -83,7 +83,7 @@
 				<section>
 					<!-- WHAT IS A GLOSSARY? -->
 					<div class="img">
-					<h4>Glossaries?</h4>
+					<h2 style="top:75%; left:25%; position: absolute">Glossaries?</h2>
 					<img width=100% height=100% data-src="images/WHY.gif" alt="GLOSSARIES?">
 					</div>
 					<aside class="notes">
@@ -200,14 +200,27 @@
 <!-- DITA REFRESHER-->
 			<section>
 				<section data-transition="none">
-				<h2>DITA refresher</h2>
-				<div style="text-align: left;">
-					<small><code style="background: #e96196">keys</code>: symbolic name that links an element to a file path</small>
-					<small><code style="background: #e96196">keydef</code>: element used to define the key of an element</small></p>
-					<pre style="width: 85%; text-align: left;"><code class="xml">&lt;keydef keys=&quot;g_aleppo&quot; type=&quot;glossentry&quot; href=&quot;g_aleppo.xml&quot;/&gt;</code></pre>
-					<p><small><code>keyref</code>: indirect link based on keys</small></p>
-					<p><small><code>conkeyref</code>: indirect transclusion based on keys</small></p>
+				<h3>DITA refresher</h3>
+				<div>
+				<small>
+				<ul style="text-align: left">
+					<li>
+						<code style="background: #e96196">keys</code>: symbolic name that links an element to a file path
+					</li>
+					<li>
+						<code style="background: #e96196">keydef</code>: element used to define the key of an element
+					</li>
+					<li>
+						<code>keyref</code>: indirect link based on keys
+					</li>
+					<li>
+						<code>conkeyref</code>: indirect transclusion based on keys
+					</li>
+				</ul>
+				</small>
 				</div>
+				<br>
+				<pre style="width: 75%"><code class="xml">&lt;keydef keys=&quot;g_aleppo&quot; type=&quot;glossentry&quot; href=&quot;g_aleppo.xml&quot;/&gt;</code></pre>
 				<aside class="notes">
 				this section is dangerous, so let us make a quick DITA refresher.
 				transclusion: hypertext feature, inclusion of part of an electronic document into one or more other documents.
@@ -215,14 +228,27 @@
 				</section>
 
 				<section data-transition="none">
-				<h2>DITA refresher</h2>
-				<div style="text-align: left;">
-					<p><code>keys</code>: symbolic name that links an element to a file path</p>
-					<p><code>keydef</code>: element used to define the key of an element</p>
-					<p><code style="background: #e96196">keyref</code>: indirect link based on keys</p>
-					<pre style="width: 85%; text-align: left;"><code class="xml">&lt;term keyref=&quot;g_aleppo&quot;/&gt;</code></pre>
-					<p>conkeyref: indirect transclusion based on keys</p>
+				<h3>DITA refresher</h3>
+				<div>
+				<small>
+				<ul style="text-align: left">
+					<li>
+						<code >keys</code>: symbolic name that links an element to a file path
+					</li>
+					<li>
+						<code>keydef</code>: element used to define the key of an element
+					</li>
+					<li>
+						<code style="background: #e96196">keyref</code>: indirect link based on keys
+					</li>
+					<li>
+						<code>conkeyref</code>: indirect transclusion based on keys
+					</li>
+				</ul>
+				</small>
 				</div>
+				<br>
+					<pre style="width: 75%"><code class="xml">&lt;term keyref=&quot;g_aleppo&quot;/&gt;</code></pre>
 				<aside class="notes">
 				this section is dangerous, so let us make a quick DITA refresher.
 				transclusion: hypertext feature, inclusion of part of an electronic document into one or more other documents.
@@ -230,14 +256,27 @@
 				</section>
 
 				<section data-transition="none">
-				<h2>DITA refresher</h2>
-				<div style="text-align: left;">
-					<p><code>keys</code>: symbolic name that links an element to a file path</p>
-					<p><code>keydef</code>: element used to define the key of an element</p>
-					<p><code>keyref</code>: indirect link based on keys</p>
-					<p><code style="background: #e96196">conkeyref</code>: indirect transclusion based on keys</p>
-					<pre style="width: 85%; text-align: left;"><code class="xml">&lt;term conkeyref=&quot;topic_key/element_id&quot;/&gt;</code></pre>
+				<h3>DITA refresher</h3>
+				<div>
+					<small>
+					<ul style="text-align: left; bottom-margin: 2em;">
+					<li>
+						<code >keys</code>: symbolic name that links an element to a file path
+					</li>
+					<li>
+						<code>keydef</code>: element used to define the key of an element
+					</li>
+					<li>
+						<code>keyref</code>: indirect link based on keys
+					</li>
+					<li>
+						<code style="background: #e96196">conkeyref</code>: indirect transclusion based on keys
+					</li>
+					</ul>
+					</small>
 				</div>
+					<br>
+					<pre><code class="xml">&lt;term conkeyref=&quot;topic_key/element_id&quot;/&gt;</code></pre>
 				<aside class="notes">
 				this section is dangerous, so let us make a quick DITA refresher.
 				transclusion: hypertext feature, inclusion of part of an electronic document into one or more other documents.
@@ -750,15 +789,6 @@
 <!-- ########################################## VERTICAL SLIDES ####################################### -->
 
 				<section>
-					<section data-transition="none">
-						<div class="img">
-							<h4 style="text-align: left; position: absolute; top:40%; left:22%;">Doc</h4>
-							<h4 style="text-align: left; position: absolute; top:12%; right:22%%;">intGloss</h4>
-							<h4 style="text-align: left; position: absolute; bottom:25%; right:27%;">Gloss</h4>
-							<img src="images/SOAP_synch1.png" width="65%" height="65%">
-						</div>
-						<aside class="notes">Out of synch, because Gloss does not include the terms we need</aside>	
-					</section>
 					<section data-transition="none">
 						<div class="img">
 							<h4 style="text-align: left; position: absolute; top:40%; left:22%;">Doc</h4>
