@@ -717,30 +717,32 @@
 						<br>├┬<code style="background: #e96196">t_SHAMPOO.xml</code>
 						<br>│├─c_SHAMPOO.xml
 						<br>│└─r_SHAMPOO.xml
-						<br>│
 						<br>├─r_IntGloss.xml
 						<br>└─m_SOAP_glossary.xml</tree>
 					</div>
 					<div class="right">
-						<pre style="font-size: 0.35em;"><code class="xml" data-trim contenteditable>
+						<pre style="width: 70%; font-size: 0.35em;"><code class="xml" data-trim contenteditable>
 &lt;task id=&quot;t_SHAMPOO&quot; xml:lang=&quot;en-US&quot;&gt;
  
  &lt;title&gt;Cleansing a &lt;term keyref=&quot;g_widget&quot;/&gt;&lt;/title&gt;
  &lt;shortdesc&gt;
-  Use &lt;term keyref=&quot;g_shampoo&quot;/&gt; to properly cleanse your &lt;term keyref=&quot;g_widget&quot;/&gt;.
+  Use &lt;term keyref=&quot;g_shampoo&quot;/&gt; to properly cleanse your 
+  &lt;term keyref=&quot;g_widget&quot;/&gt;.
  &lt;/shortdesc&gt;
 
   &lt;taskbody&gt;
    &lt;steps&gt;
-    &lt;step&gt;&lt;cmd&gt;Choose a cleansing method&lt;/cmd&gt;
-      &lt;choices&gt;
-       &lt;choice&gt;
-        Rub the &lt;term keyref=&quot;g_shampoo&quot;/&gt; on the &lt;term keyref=&quot;g_widget&quot;/&gt;
-       &lt;/choice&gt;
-       &lt;choice&gt;
-        Else it gets the hose again
-       &lt;/choice&gt;
-      &lt;/choices&gt;
+     &lt;step&gt;
+      &lt;cmd&gt;Choose a cleansing method&lt;/cmd&gt;     
+       &lt;choices&gt;
+         &lt;choice&gt;
+           Rub the &lt;term keyref=&quot;g_shampoo&quot;/&gt; on the
+            &lt;term keyref=&quot;g_widget&quot;/&gt;
+         &lt;/choice&gt;
+         &lt;choice&gt;
+           Else it gets the hose again
+         &lt;/choice&gt;
+       &lt;/choices&gt;    
      &lt;/step&gt;
    &lt;/steps&gt;
   &lt;/taskbody&gt;
