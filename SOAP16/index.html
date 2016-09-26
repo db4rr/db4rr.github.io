@@ -1,0 +1,914 @@
+<!doctype html>
+<html lang="en">
+<!-- AUTHOR: Daniel Barrio Fierro, may 2016. Kudos to Hakim el Hattab, https://github.com/hakimel/reveal.js -->
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>SOAP16</title>
+
+		<meta name="description" content="Soap! 2016 conference talk">
+		<meta name="author" content="Daniel Barrio Fierro + Wojciech Baranowski">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/SOAP.css" id="theme"> <!-- CUSTOM -->
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/xcode.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+	
+		<div class="reveal">
+
+			<div class="footer-center">
+						<img src="images/SOAP_center.png" alt="footer">
+			</div>	
+
+				<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>How I learned</h1>
+					<h1>to stop worrying</h1>
+					<h1>& love the glossary</h1>
+					<p>
+						<a href="mailto:dbarr@dolby.com">Daniel Barrio Fierro</a> / <a href="mailto:wojciech.baranowski@dolby.com">Wojciech Baranowski</a>
+					</p>
+					<aside class="notes">
+        				Hello soapers! BAD: despite ppt title, at end of it u will NOT be able 2 assemble an atomic bomb. GOOD: 4u beautiful nerds -- u got taste during Mike ppt. YES, finally someone is going to show you some code. 
+        				This is my colleague Wojtek // And this is Daniel, we both work at Dolby labs, and today we're here to bring a different perspective to the guiding theme of the conference. // We've heard this couple of days about bridging the disconnect between us and them -- techcomms/tech writers and our customers, our SMEs, our product owners... but what about the gap between us and our tools?
+    				</aside>
+				</section>
+
+<!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
+
+				<section>
+					<h2>Our stack:</h2>
+					<h3><ul>
+							<li>DITA OT</li>
+							<li>&lt;oXygen/&gt; XML</li>
+							<li>easyDITA</li>
+						</ul>
+					</h3>
+					<small>+ <a href="https://github.com/hakimel/reveal.js">reveal.js</a> for beautiful HTML slides</small>
+			
+					<aside class="notes">
+        				Let us present you our tool stack // HOW MANY OF YOU USE DITA?
+    				</aside>
+				</section>
+
+<!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
+
+				<section>
+					<!-- WHAT IS A GLOSSARY? -->
+					<div class="img">
+					<h2 style="top:75%; left:25%; position: absolute">Glossaries?</h2>
+					<img width=100% height=100% data-src="images/WHY.gif" alt="GLOSSARIES?">
+					</div>
+					<aside class="notes">
+					What is it about glossaries?
+						//alphabetical list of terms with a standardized definition within a particular domain of knowledge<br>
+						//USED TO bring consistency to our deliverables (butterfly effect) // ASSUMTION: Glossary is REUSED among TWs. It may be reused ACROSS THE COMPANY (marketing, etc)
+						//define them once, that definition is valid everywhere
+						//presented in the same way accross all deliverables (spelling, capitalization, acronyms...)
+						//Plus, in DITA, fancy stuff Out-of-the-box (html hover texts?)
+					</aside>
+				</section>
+
+<!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
+
+				<section>
+					<div class="left" style="width: 70%">
+						<h5>Aleppo soap</h5>
+						<p><small>Vegetal oil based soap traditionally produced in the city of Aleppo.</small></p>
+						<h5>Castile soap</h5>
+						<p><small>Vegetal oil based soap traditionally produced in the Castilian plains.</small></p>
+						<h5>Marseille soap</h5>
+						<p><small>Vegetal oil based soap traditionally produced in the Marseille area.</small></p>
+					</div>
+					<div class="right" style="width: 30%">
+						<img width=90% height=90% data-src="images/gloss_files.png" alt="gloss_files">
+					</div>
+					<aside class="notes">
+					example of how part of a GLOSS may look in OUTPUT -- file structure as we do it in DITA (individual files) number will be much highet -- team dedicated to manage these.
+					</aside>
+				</section>
+
+<!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
+
+				<section>
+					<!-- Problem: Glossary management -->
+				<div class="img">
+				<h4 style="text-align: left; position: absolute">Docs</h4>
+				<img width=90% height=90% data-src="images/SOAP_arrow_1.png" alt="Doc_progress">
+				</div>
+				<div class="img">
+				<h4 style="text-align: left; position: absolute">Glossary</h4>
+				<img width=90% height=90% data-src="images/SOAP_arrow_2.png" alt="Doc_progress">
+				</div>
+				<aside class="notes">
+				But there's more that makes glossaries interesting.
+					WE AUTHOR IN PARALLEL TO PRODUCT DEV. As Kasia Kolodziejczak said yesterday, tis is one of the hardest things to do. So we may develop our doc according to prod milestones, but internally, in TechPubs we also have paralel project lifecycles. one of them is our reused glossary. gloss milestones =/= doc milestones.
+					You may know you have a term, and you want to write content, but the tterm will not be added the gloss immediately. Gloos update can take from days to weeks to months, depending on the particular situation of a given company. (it has to be approved by x smes, by marketing, synch with other toolds...)
+					It may also be that you know what you need to document before your stakeholdesr (PO, marketing) have cristalised naming conventions -- in that case, it is obvious that you need to wait before you can propose a new term.
+				</aside>
+				</section>
+
+
+
+<!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
+
+				<section>
+					<!-- Glossaries in DITA -->
+				<div class="2cols" >
+					<div class="left">
+						Glossentry (term)
+					</div>
+					<div class="right">
+						<pre style="font-size: 0.35em;"><code class="xml" data-trim contenteditable>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE glossentry PUBLIC &quot;-//OASIS//DTD DITA Glossary//EN&quot; &quot;glossary.dtd&quot;&gt;
+&lt;glossentry id=&quot;g_soap&quot; xml:lang=&quot;en-US&quot;&gt;
+ &lt;glossterm&gt;SOAP! content conference&lt;/glossterm&gt;
+ &lt;glossdef&gt;SOAP! is the best content conference. Period.&lt;/glossdef&gt;
+  &lt;glossBody&gt;
+   &lt;glossSurfaceForm/&gt;
+	&lt;glossAlt&gt;
+	 &lt;glossAcronym&gt;SOAP!&lt;/glossAcronym&gt;
+	&lt;/glossAlt&gt;
+   &lt;/glossBody&gt;
+&lt;/glossentry&gt;
+						</code></pre>
+					<br>
+					</div>
+				</div>
+				<div>
+					<div class="left">
+						Glossary map
+					</div>
+					<div class="right">
+						<pre style="font-size: 0.35em;"><code class="xml" data-trim contenteditable>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE map PUBLIC &quot;-//OASIS//DTD DITA Map//EN&quot; &quot;map.dtd&quot;&gt;
+&lt;map&gt;
+ &lt;title&gt;SOAP glossary&lt;/title&gt;
+ &lt;keydef keys=&quot;g_aleppo&quot; type=&quot;glossentry&quot; href=&quot;g_aleppo.xml&quot;/&gt;
+ &lt;keydef keys=&quot;g_bialyjelen&quot; type=&quot;glossentry&quot; href=&quot;g_bialyjelen.xml&quot;/&gt;
+ &lt;keydef keys=&quot;g_borax&quot; type=&quot;glossentry&quot; href=&quot;g_borax.xml&quot;/&gt;
+ &lt;keydef keys=&quot;g_bubble&quot; type=&quot;glossentry&quot; href=&quot;g_bubble.xml&quot;/&gt;
+ &lt;keydef keys=&quot;g_castile&quot; type=&quot;glossentry&quot; href=&quot;g_castile.xml&quot;/&gt;
+ &lt;keydef keys=&quot;g_detergent&quot; type=&quot;glossentry&quot; href=&quot;g_detergent.xml&quot;/&gt;
+ &lt;keydef keys=&quot;g_foam&quot; type=&quot;glossentry&quot; href=&quot;g_foam.xml&quot;/&gt;
+ &lt;keydef keys=&quot;g_gizmo&quot; type=&quot;glossentry&quot; href=&quot;g_gizmo.xml&quot;/&gt;
+ &lt;keydef keys=&quot;g_lathe&quot; type=&quot;glossentry&quot; href=&quot;g_lathe.xml&quot;/&gt;
+ &lt;keydef keys=&quot;g_lye&quot; type=&quot;glossentry&quot; href=&quot;g_lye.xml&quot;/&gt;
+ &lt;keydef keys=&quot;g_marseille&quot; type=&quot;glossentry&quot; href=&quot;g_marseille.xml&quot;/&gt;
+ &lt;keydef keys=&quot;g_offenbach&quot; type=&quot;glossentry&quot; href=&quot;g_offenbach.xml&quot;/&gt;
+ &lt;keydef keys=&quot;g_shampoo&quot; type=&quot;glossentry&quot; href=&quot;g_shampoo.xml&quot;/&gt;
+ &lt;keydef keys=&quot;g_sodium_stearate&quot; type=&quot;glossentry&quot; href=&quot;g_sodium_stearate.xml&quot;/&gt;
+ &lt;keydef keys=&quot;g_surfactant&quot; type=&quot;glossentry&quot; href=&quot;g_surfactant.xml&quot;/&gt;
+ &lt;keydef keys=&quot;g_thingamajig&quot; type=&quot;glossentry&quot; href=&quot;g_thingamajig.xml&quot;/&gt;
+ &lt;keydef keys=&quot;g_whatchamacallit&quot; type=&quot;glossentry&quot; href=&quot;g_whatchamacallit.xml&quot;/&gt;
+ &lt;keydef keys=&quot;g_widget&quot; type=&quot;glossentry&quot; href=&quot;g_widget.xml&quot;/&gt;
+&lt;/map&gt;
+						</code></pre>
+					</div>
+				</div>
+				</section>
+<!-- escaping tool: http://www.accessify.com/tools-and-wizards/developer-tools/quick-escape/default.php -->
+
+<!-- ########################################## VERTICAL SLIDES ####################################### -->
+
+<!-- DITA REFRESHER-->
+			<section>
+				<section data-transition="none">
+				<h3>DITA refresher</h3>
+				<div>
+				<small>
+				<ul style="text-align: left">
+					<li>
+						<code style="background: #e96196">keys</code>: symbolic name that links an element to a file path
+					</li>
+					<li>
+						<code style="background: #e96196">keydef</code>: element used to define the key of an element
+					</li>
+					<li>
+						<code>keyref</code>: indirect link based on keys
+					</li>
+					<li>
+						<code>conkeyref</code>: indirect transclusion based on keys
+					</li>
+				</ul>
+				</small>
+				</div>
+				<br>
+				<pre style="text-align: center; width: 80%"><code class="xml">&lt;keydef keys=&quot;g_aleppo&quot; type=&quot;glossentry&quot; href=&quot;g_aleppo.xml&quot;/&gt;</code></pre>
+				<aside class="notes">
+				this section is dangerous, so let us make a quick DITA refresher.
+				transclusion: hypertext feature, inclusion of part of an electronic document into one or more other documents.
+				</aside>
+				</section>
+
+				<section data-transition="none">
+				<h3>DITA refresher</h3>
+				<div>
+				<small>
+				<ul style="text-align: left">
+					<li>
+						<code >keys</code>: symbolic name that links an element to a file path
+					</li>
+					<li>
+						<code>keydef</code>: element used to define the key of an element
+					</li>
+					<li>
+						<code style="background: #e96196">keyref</code>: indirect link based on keys
+					</li>
+					<li>
+						<code>conkeyref</code>: indirect transclusion based on keys
+					</li>
+				</ul>
+				</small>
+				</div>
+				<br>
+					<pre style="text-align: center; width: 80%"><code class="xml">&lt;term keyref=&quot;g_aleppo&quot;/&gt;</code></pre>
+				<aside class="notes">
+				this section is dangerous, so let us make a quick DITA refresher.
+				transclusion: hypertext feature, inclusion of part of an electronic document into one or more other documents.
+				</aside>
+				</section>
+
+				<section data-transition="none">
+				<h3>DITA refresher</h3>
+				<div>
+					<small>
+					<ul style="text-align: left; bottom-margin: 2em;">
+					<li>
+						<code >keys</code>: symbolic name that links an element to a file path
+					</li>
+					<li>
+						<code>keydef</code>: element used to define the key of an element
+					</li>
+					<li>
+						<code>keyref</code>: indirect link based on keys
+					</li>
+					<li>
+						<code style="background: #e96196">conkeyref</code>: indirect transclusion based on keys
+					</li>
+					</ul>
+					</small>
+				</div>
+					<br>
+					<pre style="text-align: center; width: 80%"><code class="xml">&lt;term conkeyref=&quot;topic_key/element_id&quot;/&gt;</code></pre>
+				<aside class="notes">
+				this section is dangerous, so let us make a quick DITA refresher.
+				transclusion: hypertext feature, inclusion of part of an electronic document into one or more other documents.
+				</aside>
+				</section>
+			</section>
+
+<!-- ////////////////////////////////////////// END VERTICAL SLIDES ////////////////////////////////////////  -->
+
+<!-- ########################################## VERTICAL SLIDES ####################################### -->
+
+			<section> 
+				<section data-transition="none"><!-- EXAMPLE MAP -->
+				<div>
+					<div class="left" style="font-size: 75%">
+						<tree><code style="background: #e96196">SOAP.dita</code>
+						<br>├─c_SOAP.xml
+						<br>├─t_SOAP.xml
+						<br>└─r_SOAP.xml</tree>
+					</div>
+					<div class="right">
+						<pre style="font-size: 0.35em;"><code class="xml" contenteditable>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE map PUBLIC &quot;-//OASIS//DTD DITA Map//EN&quot; &quot;map.dtd&quot;&gt;
+
+&lt;map&gt;
+ 
+ &lt;title&gt;SOAP example map&lt;/title&gt;
+ 
+ &lt;mapref href=&quot;Glossary/m_SOAP_glossary.ditamap&quot;/&gt;
+ 
+ &lt;topicref href=&quot;c_SOAP.xml&quot;/&gt;
+ &lt;topicref href=&quot;t_SOAP.xml&quot;/&gt;
+ &lt;topicref href=&quot;r_SOAP.xml&quot;/&gt;
+
+&lt;/map&gt;						
+
+
+
+
+
+
+
+
+						</code></pre>
+					</div>
+				</div>
+				</section>
+
+				<section data-transition="none"><!-- EXAMPLE CONCEPT -->
+				<div style="position: relative; top:0;">
+					<div class="left" style="font-size: 75%">
+						<tree>SOAP.dita
+						<br>├─<code style="background: #e96196">c_SOAP.xml</code>
+						<br>├─t_SOAP.xml
+						<br>└─r_SOAP.xml</tree>
+					</div>
+					<div class="right">
+						<pre style="font-size: 0.35em;"><code class="xml" contenteditable>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE concept PUBLIC &quot;-//OASIS//DTD DITA Concept//EN&quot; &quot;concept.dtd&quot;&gt;
+
+&lt;concept id=&quot;c_SOAP&quot; xml:lang=&quot;en-US&quot;&gt;
+ 
+ &lt;title&gt;THING hygiene&lt;/title&gt;
+ &lt;shortdesc&gt;Your THING has very strict hygiene requirements.&lt;/shortdesc&gt;
+ 
+ &lt;conbody&gt;
+  &lt;ul&gt;
+   &lt;li&gt;You shall never expose your THING under bright light.&lt;/p&gt;
+   &lt;li&gt;You shall regularly cleanse your THING using SOAP.&lt;/p&gt;
+   &lt;li&gt;Never feed your THING after midnight.&lt;/p&gt;
+  &lt;/ul&gt;
+ &lt;/conbody&gt;
+
+&lt;/concept&gt;			
+
+
+
+
+
+						</code></pre>
+					</div>
+					<aside class="notes">
+				*Summary of unknowns*
+						Some entity is going to be a term
+						No such term in glossary yet
+						No idea how term will look in glossary
+						--lack of input from PO, marketing...
+						BUT WE WANT TO WRITE</aside>
+				</div>
+				</section>
+
+				<section data-transition="none"><!-- EXAMPLE TASK -->
+				<div>
+					<div class="left" style="font-size: 75%">
+						<tree>SOAP.dita
+						<br>├─c_SOAP.xml
+						<br>├─<code style="background: #e96196">t_SOAP.xml</code>
+						<br>└─r_SOAP.xml</tree>
+					</div>
+					<div class="right">
+						<pre style="font-size: 0.35em;"><code class="xml" data-trim contenteditable>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE task PUBLIC &quot;-//OASIS//DTD DITA Task//EN&quot; &quot;task.dtd&quot;&gt;
+
+&lt;task id=&quot;t_SOAP&quot; xml:lang=&quot;en-US&quot;&gt;
+    
+ &lt;title&gt;Cleansing a THING&lt;/title&gt;
+ &lt;shortdesc&gt;Use SOAP to properly cleanse your THING.&lt;/shortdesc&gt;
+    
+ &lt;taskbody&gt;
+  &lt;steps&gt;
+   &lt;step&gt;
+    &lt;cmd&gt;Rub the SOAP on the THING&lt;/cmd&gt;
+   &lt;/step&gt;
+   &lt;step&gt;
+    &lt;cmd&gt;????&lt;/cmd&gt;
+   &lt;/step&gt;
+   &lt;step&gt;
+    &lt;cmd&gt;PROFIT&lt;/cmd&gt;
+   &lt;/step&gt;
+  &lt;/steps&gt;
+ &lt;/taskbody&gt;
+
+&lt;/task&gt;
+						</code></pre>
+					</div>
+				</div>
+				<aside class="notes">
+				*Summary of unknowns*
+						Some entity is going to be a term
+						No such term in glossary yet
+						No idea how term will look in glossary
+						--lack of input from PO, marketing...
+						BUT WE WANT TO WRITE</aside>
+				</section>
+
+				<section data-transition="none"><!-- EXAMPLE REF -->
+				<div>
+					<div class="left" style="font-size: 75%">
+						<tree>SOAP.dita
+						<br>├─c_SOAP.xml
+						<br>├─t_SOAP.xml
+						<br>└─<code style="background: #e96196">r_SOAP.xml</code></tree>
+					</div>
+					<div class="right">
+						<pre style="font-size: 0.35em;"><code class="xml" contenteditable>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE reference PUBLIC &quot;-//OASIS//DTD DITA Reference//EN&quot; &quot;reference.dtd&quot;&gt;
+
+&lt;reference id=&quot;r_SOAP&quot; xml:lang=&quot;en-US&quot;&gt;
+
+ &lt;title&gt;SOAP ingredients&lt;/title&gt;
+ &lt;shortdesc&gt;SOAP is the preferred medium for cleansing a THING and satisfying
+  its hygienic requirements.&lt;/shortdesc&gt;
+
+ &lt;refbody&gt;
+  &lt;section&gt;
+   &lt;ul&gt;
+    &lt;li&gt;Water&lt;/li&gt;
+    &lt;li&gt;Olive oil&lt;/li&gt;
+    &lt;li&gt;Palm kernel oil (copra oil)&lt;/li&gt;
+    &lt;li&gt;Vegetable glycerin&lt;/li&gt;
+   &lt;/ul&gt;
+  &lt;/section&gt;
+ &lt;/refbody&gt;
+
+&lt;/reference&gt;
+
+						</code></pre>
+					</div>
+				</div>
+				<aside class="notes">
+				*Summary of unknowns*
+						Some entity is going to be a term
+						No such term in glossary yet
+						No idea how term will look in glossary
+						--lack of input from PO, marketing...
+						BUT WE WANT TO WRITE</aside>
+				</section>
+			</section>
+
+<!-- ////////////////////////////////////////// END VERTICAL SLIDES ////////////////////////////////////////  -->
+
+			<section>
+				<h4>Introducing:</h4>
+				<h3>Interim Glossaries</h3>
+			</section>
+
+<!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
+
+				<section>
+				<div class="img">
+					<h4 style="text-align: left; position: absolute; top:40%; left:22%;">Doc</h4>
+					<h4 style="text-align: left; position: absolute; top:12%; right:22%%;">intGloss</h4>
+					<h4 style="text-align: left; position: absolute; bottom:25%; right:27%;">Gloss</h4>
+					<img src="images/SOAP_disconnect.png" width="65%" height="65%">
+				</div>
+				<aside class="notes">
+				GLOSSARY IS REUSED
+				We can't synch with GLOSS, but we would like to handle terminology better (we know where a particular Subject Matter Entity goes)
+				PO has not decided OR our candidates are being reviewed... but the content can be written!
+				</aside>	
+				</section>				
+
+<!-- ########################################## VERTICAL SLIDES ####################################### -->
+
+			<section>
+				<section data-transition="none"><!-- EXAMPLE intGloss -->
+				<div>
+					<div class="left" style="font-size: 75%">
+						<tree>SOAP.dita
+						<br>├─c_SOAP.xml
+						<br>├─t_SOAP.xml
+						<br>├─r_SOAP.xml
+						<br>└─<code style="background: #e96196">r_IntGloss.xml</code></tree>
+					</div>
+					<div class="right">
+						<pre style="font-size: 0.35em;"><code class="xml" contenteditable>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE reference PUBLIC &quot;-//OASIS//DTD DITA Reference//EN&quot; &quot;reference.dtd&quot;&gt;
+
+&lt;reference id=&quot;SOAP_intGloss&quot; xml:lang=&quot;en-US&quot;&gt;
+
+ &lt;title&gt;Reference title&lt;/title&gt;
+
+  &lt;refbody&gt;
+   &lt;section&gt;&lt;!--SOAP--&gt;
+    &lt;term id=&quot;SOAP&quot;&gt;SOAP&lt;/term&gt;&lt;term conkeyref=&quot;IntGloss/SOAP&quot;/&gt;
+   &lt;/section&gt;
+   &lt;section&gt;&lt;!--THING--&gt;
+    &lt;term id=&quot;THING&quot;&gt;THING&lt;/term&gt;&lt;term conkeyref=&quot;IntGloss/THING&quot;/&gt;
+   &lt;/section&gt;
+ &lt;/refbody&gt;
+
+&lt;/reference&gt;
+
+
+						</code></pre>
+					</div>
+				</div>
+				<aside class="notes">
+				LOOK AT THE KEYS. The conkeyref is added redundantly for ease of use (you just have to copy paste it) // DO DEMO</aside>
+				</section>
+
+				<section data-transition="none"><!-- EXAMPLE MAP WITH INTGLOSS-->
+				<div>
+					<div class="left" style="font-size: 75%">
+						<tree><code style="background: #e96196">SOAP.dita</code>
+						<br>├─c_SOAP.xml
+						<br>├─t_SOAP.xml
+						<br>├─r_SOAP.xml
+						<br>└─r_IntGloss.xml</tree>
+					</div>
+					<div class="right">
+						<pre style="font-size: 0.35em;"><code class="xml" contenteditable>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE map PUBLIC &quot;-//OASIS//DTD DITA Map//EN&quot; &quot;map.dtd&quot;&gt;
+
+&lt;map&gt;
+ 
+ &lt;title&gt;SOAP example map&lt;/title&gt;
+ 
+ &lt;mapref href=&quot;Glossary/m_SOAP_glossary.ditamap&quot;/&gt;
+ 
+ &lt;topicref href=&quot;c_SOAP.xml&quot;/&gt;
+ &lt;topicref href=&quot;t_SOAP.xml&quot;/&gt;
+ &lt;topicref href=&quot;r_SOAP.xml&quot;/&gt;
+ 
+ &lt;topicref href="r_IntGloss.xml" processing-role="resource-only" keys="IntGloss"/&gt;
+
+&lt;/map&gt;			
+
+
+
+						</code></pre>
+					</div>
+				</div>
+				<aside class="notes">
+				LOOK AT THE KEYS</aside>
+				</section>
+
+				<section data-transition="none"><!-- EXAMPLE CONCEPT WITH INTGLOSS-->
+				<div>
+					<div class="left" style="font-size: 75%">
+						<tree>SOAP.dita
+						<br>├─<code style="background: #e96196">c_SOAP.xml</code>
+						<br>├─t_SOAP.xml
+						<br>├─r_SOAP.xml
+						<br>└─r_IntGloss.xml</tree>
+					</div>
+					<div class="right">
+						<pre style="font-size: 0.35em;"><code class="xml" data-trim contenteditable>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE concept PUBLIC &quot;-//OASIS//DTD DITA Concept//EN&quot; &quot;concept.dtd&quot;&gt;
+
+&lt;concept id=&quot;c_SOAP&quot; xml:lang=&quot;en-US&quot;&gt;
+
+ &lt;title&gt;&lt;term conkeyref="IntGloss/THING"/&gt; hygiene&lt;/title&gt;
+ &lt;shortdesc&gt;Your &lt;term conkeyref="IntGloss/THING"/&gt; has very strict
+  hygiene requirements.&lt;/shortdesc&gt;
+  
+  &lt;conbody&gt;
+   &lt;ul&gt;
+    &lt;li&gt;You shall never expose your &lt;term conkeyref="IntGloss/THING"/&gt;
+     under bright light.&lt;/li&gt;
+    &lt;li&gt;You shall regularly cleanse your &lt;term conkeyref="IntGloss/THING"/&gt;
+     using &lt;term conkeyref="IntGloss/SOAP"/&gt;.&lt;/li&gt;
+    &lt;li&gt;Never feed your THING after midnight.&lt;/li&gt;
+   &lt;/ul&gt;
+  &lt;/conbody&gt;
+
+&lt;/concept&gt;
+						</code></pre>
+					</div>
+				</div>
+				<aside class="notes">
+				This is just one possible solution, but the use of conkeyrefs menas that we separate the map structure from the interim glossary. Our single sourced term candidates are defined only within the intGloss file.</aside>
+				</section>
+			</section>
+			
+<!-- ////////////////////////////////////////// END VERTICAL SLIDES ////////////////////////////////////////  -->
+
+<!-- ########################################## VERTICAL SLIDES ####################################### -->
+
+				<section>
+					<section data-transition="none">
+						<pre style="width: 75%"><code class="xml">&lt;term id="SOAP">SOAP&lt;/term></code></pre>
+						<pre style="width: 75%"><code class="xml">&lt;term id="THING">THING&lt;/term></code></pre>
+						<div>
+							<div>
+								<small style="margin: 1em;">
+								<b>Cleansing a THING</b>
+								<p>Use SOAP to clean your THING.</p>
+								<ol>
+								<li>Rub the SOAP on the THING</li>
+								<li>????</li>
+								<li>PROFIT</li>
+								</ol></small>
+							</div>
+							<pre style="width: 75%; font-size: 0.35em;"><code class="xml" data-trim>
+&lt;task id=&quot;t_SOAP&quot; xml:lang=&quot;en-US&quot;&gt;
+    
+ &lt;title&gt;Cleansing a &lt;term conkeyref="IntGloss/THING"/&gt;&lt;/title&gt;
+ &lt;shortdesc&gt;Use &lt;term conkeyref="IntGloss/SOAP"/&gt; to properly cleanse
+  your &lt;term conkeyref="IntGloss/THING"/&gt;.&lt;/shortdesc&gt;
+    
+ &lt;taskbody&gt;
+  &lt;steps&gt;
+    &lt;step&gt;
+     &lt;cmd&gt;Rub the &lt;term conkeyref="IntGloss/SOAP"/&gt;
+      on the &lt;term conkeyref="IntGloss/THING"/&gt;&lt;/cmd&gt;
+    &lt;/step&gt;
+    &lt;step&gt;
+     &lt;cmd&gt;????&lt;/cmd&gt;
+    &lt;/step&gt;
+    &lt;step&gt;
+     &lt;cmd&gt;PROFIT&lt;/cmd&gt;
+    &lt;/step&gt;
+  &lt;/steps&gt;
+ &lt;/taskbody&gt;
+
+&lt;/task&gt;
+							</code></pre>
+						</div>
+						<aside class="notes">
+				GIZMO - MARSEILLE</aside>
+					</section>
+					
+					<section data-transition="none">
+						<pre style="width: 75%"><code class="xml">&lt;term id="SOAP">Marseille soap&lt;/term></code></pre>
+						<pre style="width: 75%"><code class="xml">&lt;term id="THING">Gizmo&lt;/term></code></pre>
+						<div>
+							<div>
+								<small style="margin: 1em;">
+								<b>Cleansing a Gizmo</b>
+								<p>Use Marseille soap to clean your Gizmo.</p>
+								<ol>
+								<li>Rub the Marseille soap on the Gizmo</li>
+								<li>????</li>
+								<li>PROFIT</li>
+								</ol></small>
+							</div>
+							<pre style="width: 75%; font-size: 0.35em;"><code class="xml" data-trim>
+&lt;task id=&quot;t_SOAP&quot; xml:lang=&quot;en-US&quot;&gt;
+    
+ &lt;title&gt;Cleansing a &lt;term conkeyref="IntGloss/THING"/&gt;&lt;/title&gt;
+ &lt;shortdesc&gt;Use &lt;term conkeyref="IntGloss/SOAP"/&gt; to properly cleanse
+  your &lt;term conkeyref="IntGloss/THING"/&gt;.&lt;/shortdesc&gt;
+    
+ &lt;taskbody&gt;
+  &lt;steps&gt;
+    &lt;step&gt;
+     &lt;cmd&gt;Rub the &lt;term conkeyref="IntGloss/SOAP"/&gt;
+      on the &lt;term conkeyref="IntGloss/THING"/&gt;&lt;/cmd&gt;
+    &lt;/step&gt;
+    &lt;step&gt;
+     &lt;cmd&gt;????&lt;/cmd&gt;
+    &lt;/step&gt;
+    &lt;step&gt;
+     &lt;cmd&gt;PROFIT&lt;/cmd&gt;
+    &lt;/step&gt;
+  &lt;/steps&gt;
+ &lt;/taskbody&gt;
+
+&lt;/task&gt;
+							</code></pre>
+						</div>
+					</section>
+				</section>
+
+<!-- ////////////////////////////////////////// END VERTICAL SLIDES ////////////////////////////////////////  -->
+
+<!-- ########################################## VERTICAL SLIDES ####################################### -->
+
+				<section>
+					<section data-transition="none">
+						<div class="img">
+							<h4 style="text-align: left; position: absolute; top:40%; left:22%;">Doc</h4>
+							<h4 style="text-align: left; position: absolute; top:12%; right:22%%;">intGloss</h4>
+							<h4 style="text-align: left; position: absolute; bottom:25%; right:27%;">Gloss</h4>
+							<img src="images/SOAP_synch1.png" width="65%" height="65%">
+						</div>
+						<aside class="notes">Out of synch, because Gloss does not include the terms we need</aside>	
+					</section>
+					<section data-transition="none">
+						<div class="img">
+							<h4 style="text-align: left; position: absolute; top:40%; left:22%;">Doc</h4>
+							<h4 style="text-align: left; position: absolute; top:12%; right:22%%;">intGloss</h4>
+							<h4 style="text-align: left; position: absolute; bottom:25%; right:27%;">Gloss</h4>
+							<img src="images/SOAP_synch2.png" width="65%" height="65%">
+						</div>
+						<aside class="notes">Partial synch, some terms already in Gloss, but intGloss is still needed</aside>
+					</section>
+				</section>
+
+<!-- ////////////////////////////////////////// END VERTICAL SLIDES ////////////////////////////////////////  -->
+
+				<section>
+					<div>
+					<div class="left" style="font-size: 75%">
+						<tree>SOAP.dita
+						<br>├┬t_SOAP.xml
+						<br>│├─c_SOAP.xml
+						<br>│└─r_SOAP.xml
+						<br>├┬<code style="background: #e96196">t_SHAMPOO.xml</code>
+						<br>│├─c_SHAMPOO.xml
+						<br>│└─r_SHAMPOO.xml
+						<br>├─r_IntGloss.xml
+						<br>└─m_SOAP_glossary.xml</tree>
+					</div>
+					<div class="right">
+						<pre style="width: 70%; font-size: 0.35em;"><code class="xml" data-trim contenteditable>
+&lt;task id=&quot;t_SHAMPOO&quot; xml:lang=&quot;en-US&quot;&gt;
+ 
+ &lt;title&gt;Cleansing a &lt;term keyref=&quot;g_widget&quot;/&gt;&lt;/title&gt;
+ &lt;shortdesc&gt;
+  Use &lt;term keyref=&quot;g_shampoo&quot;/&gt; to properly cleanse your 
+  &lt;term keyref=&quot;g_widget&quot;/&gt;.
+ &lt;/shortdesc&gt;
+
+  &lt;taskbody&gt;
+   &lt;steps&gt;
+     &lt;step&gt;
+      &lt;cmd&gt;Choose a cleansing method&lt;/cmd&gt;     
+       &lt;choices&gt;
+         &lt;choice&gt;
+           Rub the &lt;term keyref=&quot;g_shampoo&quot;/&gt; on the
+            &lt;term keyref=&quot;g_widget&quot;/&gt;
+         &lt;/choice&gt;
+         &lt;choice&gt;
+           Else it gets the hose again
+         &lt;/choice&gt;
+       &lt;/choices&gt;    
+     &lt;/step&gt;
+   &lt;/steps&gt;
+  &lt;/taskbody&gt;
+
+&lt;/task&gt;
+						</code></pre>
+					</div>
+				</div>
+				<aside class="notes">Let's say we want to reuse some already existing topics into our map. These can already refer to existing glossary entries.</aside>
+				</section>
+
+<!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
+
+				<section>
+					<!-- Problem: Glossary management -->
+				<div class="img">
+				<h4 style="text-align: left; position: absolute">Docs</h4>
+				<img width=90% height=90% data-src="images/SOAP_arrow_1.png" alt="Doc_progress">
+				</div>
+				<div class="img">
+				<h4 style="text-align: left; position: absolute">Glossary</h4>
+				<img width=90% height=90% data-src="images/SOAP_arrow_2.png" alt="Doc_progress">
+				</div>
+				<aside class="notes">Remember: the glossary might have been updated while we were working -- but how can writers know that?</aside>
+				</section>
+
+<!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
+
+				<section data-transition="slide-in fade-out">
+					<h2>Schematron</h2>
+					<small>ISO Schematron of 2006 (ISO/IEC FDIS 19757-3)</small>
+					<p><ul>
+						<li>Validation rules</li>
+						<li>Quick fixes</li>
+					</ul></p>
+					<aside class="notes">ISO recommendation, been around since 1999, open source, XSLT+XPath, validation with simple syntax</aside>
+				</section>
+
+<!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
+
+				<section data-transition="fade-in slide-out">
+					<video src="videos/SOAP_schematron.mp4" muted controls ></video>
+					<aside class="notes">As terms are added into the glossary, they should also be added to the schematron. (At some point we would like to automatize this as well)</aside>
+				</section>
+
+<!-- ########################################## VERTICAL SLIDES ####################################### -->
+
+				<section>
+					<section data-transition="none">
+						<div class="img">
+							<h4 style="text-align: left; position: absolute; top:40%; left:22%;">Doc</h4>
+							<h4 style="text-align: left; position: absolute; top:12%; right:22%%;">intGloss</h4>
+							<h4 style="text-align: left; position: absolute; bottom:25%; right:27%;">Gloss</h4>
+							<img src="images/SOAP_synch2.png" width="65%" height="65%">
+						</div>
+						<aside class="notes">Partial synch, some terms already in Gloss, but intGloss is still needed</aside>
+					</section>
+					<section data-transition="none">
+						<div class="img">
+							<h4 style="text-align: left; position: absolute; top:40%; left:22%;">Doc</h4>
+							<h4 style="text-align: left; position: absolute; top:12%; right:22%%;">intGloss</h4>
+							<h4 style="text-align: left; position: absolute; bottom:25%; right:27%;">Gloss</h4>
+							<img src="images/SOAP_synch3.png" width="65%" height="65%">
+						</div>
+						<aside class="notes">Full Gloss synch, intGloss no longer needed, topics safe for reuse / (PO confirmation, whatever) - HOW TO SYNCH? topics that use intgloss are not reuse-friendly, cuz u need to always add the intgloss to the map (XSLT, or regex z oxygen) caveat: regex synch will be a lot easier if your CMS does not add IDs by default</aside>
+					</section>
+				</section>
+
+<!-- ////////////////////////////////////////// END VERTICAL SLIDES ////////////////////////////////////////  -->
+
+				<section data-transition="slide-in fade-out">
+					<h4>ProTip:</h4>
+					<h3>Let XSLT handle the synch</h3>
+				</section>
+
+<!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
+
+				<section data-transition="fade-in slide-out">
+					<video src="videos/SOAP_XSLT_1.mp4" muted controls </video>
+				</section>
+
+<!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
+
+				<section data-transition="slide-in fade-out">
+					<h3>But that's not all!</h3>
+					<p>How about some list automation?</p>
+					<aside class="notes">list of terms+definitions, list of acronyms... for internal management or to be published as ref topics</aside>
+				</section>
+
+<!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
+
+				<section data-transition="fade-in slide-out">
+					<video src="videos/SOAP_XSLT_2.mp4" muted controls </video>
+					<!-- class="slideautostart"> -->
+				</section>
+
+<!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
+
+				<section>
+					<h3>Reuse content</h3>
+					<span class="fragment fade-in"><h3>Reuse effort</h3></span>
+					<span class="fragment fade-in"><h3>Reuse ideas</h3></span>
+					<aside class="notes">
+        				
+    				</aside>
+				</section>
+
+<!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
+				<section>
+					<h2>💖Glossary💖</h2>
+					<small>
+					<p>Slides and materials on <a href="https://github.com/db4rr/db4rr.github.io">github</a></p>
+					<p>XSLT on <a href="w3.org/TR/xslt-30/">W3C</a> and <a href="w3schools.com/xsl/">w3schools</a></p>
+					<p><a href="http://schematron.com">schematron.com</a></p>
+					<aside class="notes">
+						Exactly -- you can find ....
+        				& as I said at the beginning -- we've re-interpreted the motto of the conference as being about the gap between techcomm and our tools and the people behind it.
+        				Our experience has tought us that there are a lot of low hanging fruits in out-of-the-box DITA environments, and we hope our presentation, our little love story, has given you some interesting ideas. 
+    				</aside>
+					</small>
+				</section>
+
+<!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
+
+				<section>
+					<a href="http://soapconf.com"><img data-src="images/SOAP_logo.png" alt="SOAP_logo"></a>
+					<p><h4>Got feedback? <a href="mailto:dbarr@dolby.com,wojciech.baranowski@dolby.com">bring it on!</a></h4></p>
+					<h4><a href="https://db4rr.github.io">https://db4rr.github.io</a></h4>
+				</section>
+
+<!-- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
+
+		</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/slideautostart.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
