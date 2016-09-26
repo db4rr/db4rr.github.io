@@ -1,4 +1,4 @@
-# Hi, this is Daniel.
+# Hi, this is Daniel
 Nice to have you around here.
 
 I'm mainly using this repo to host some [reveal.js](https://github.com/hakimel/reveal.js)  presentations.
