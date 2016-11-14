@@ -7,5 +7,4 @@ Hakim made a great tool -- try it!
 I am also taking advantage the [Bootstrap CDN](getbootstrap.com), with [Font Awesome](http://fontawesome.io/) icons.
 They make things almost too easy.
 
-You can also navigate my projects via http://db4rr.github.io/
-**Have fun!**
+You can also navigate my projects via http://db4rr.github.io/ -- **Have fun!**
