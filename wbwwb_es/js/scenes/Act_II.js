@@ -39,8 +39,8 @@ function Stage_Screamer(self){
                         p.caughtCrazy = caught.crazy;
                         d.chyron = "CUADRADO VIOLENTO";
                     }else{
-                        if(caught.shocked) d.chyron = "vaya, te lo perdiste";
-                        else d.chyron = "(tiene que suceder *algo* interesante...)";
+                        if(caught.shocked) d.chyron = "tienes que buscar un mejor encuadre";
+                        else d.chyron = "espera a que suceda algo interesante";
                     }
                     return true;
                 }
@@ -53,7 +53,7 @@ function Stage_Screamer(self){
                 var caught = d.caught({
                     shocked: {_CLASS_:"NormalPeep", shocked:true}
                 });
-                if(caught.shocked) d.chyron = "(tienes que lograr un mejor encuadre)";
+                if(caught.shocked) d.chyron = "(tienes que buscar un mejor encuadre)";
                 return caught.shocked;
             })
             .otherwise(_chyPeeps);
@@ -132,7 +132,7 @@ function Stage_Nervous(self, HACK){
                             d.chyron = "(no se ve bien lo que pasa)";
                         }
                     }else{
-                        d.chyron = "(tiene que suceder *algo* interesante...)";
+                        d.chyron = "espera a que suceda algo interesante";
                         // d.chyron = "(ya gotta catch 'em *being* scared by a square)";
                     }
                     return true;
@@ -203,10 +203,10 @@ function Stage_Snobby(self, HACK){
                         p.audienceCircles = 1;
                         p.audienceSquares = 0;
                         p.caughtSnobby = caught.snobby;
-                        d.chyron = "CUADRADOS IGNORAN CIRCULOS";
+                        d.chyron = "CUADRADO INSULTA CIRCULO";
                     }else{
                         //d.chyron = "(ya gotta catch 'em *while* snubbing a circle)";
-                        d.chyron = "(tiene que suceder *algo* interesante...)";
+                        d.chyron = "espera a que suceda algo interesante";
                     }
                     return true;
                 }
@@ -359,7 +359,7 @@ function Stage_Angry_Escalation(self, HACK){
 var _manifestoIndex = -1;
 var _manifesto = [
     //"as if you viewers want GOOD news",
-    "a nadie le interesa esto",
+    "a NADIE le interesa esto",
     "aburrido, busca algo viral",
     //"peace is boring. conflict gets clicks.",
     "los conflictos crean buenas historias",
@@ -425,10 +425,10 @@ function _chyAngry(d){
 
         }else{
             if(caught.shocked){
-                d.chyron = "vaya, te lo perdiste";
+                d.chyron = "tienes que buscar un mejor encuadre";
             }else{
                 // d.chyron = "(ya gotta catch 'em *yelling* at others)";
-                d.chyron = "(tiene que suceder *algo* interesante...)";
+                d.chyron = "espera a que suceda algo interesante";
             }
         }
         return true;
@@ -483,7 +483,7 @@ function _chyShocked(d){
     var caught = d.caught({
         shocked: {_CLASS_:"NormalPeep", shocked:true}
     });
-    if(caught.shocked) d.chyron = "no esta claro lo que pasa";
+    if(caught.shocked) d.chyron = "tienes que buscar un mejor encuadre";
     return caught.shocked;
 }
 
