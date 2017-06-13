@@ -1,0 +1,18 @@
+.english {
+display:block;
+}
+.spanish {
+display:none;
+}
+.polish {
+display:none;
+}
+#button_en {
+display:none;
+}
+#button_es {
+display:inline;
+}
+#button_pl {
+display:inline;
+}

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en es pl">
 <!-- AUTHOR: Daniel Barrio Fierro, sept 2016. Kudos to Hakim el Hattab and the nice people behind Bootstrap -->
 
 	<head>
@@ -14,6 +14,12 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- language switcher -->
+		<link href="assets/EN.css" rel="stylesheet" type="text/css">
+		<link href="assets/ES.css" rel="alternate stylesheet" type="text/css" title="spanish">
+		<link href="assets/PL.css" rel="alternate stylesheet" type="text/css" title="polish">
+		<script src="assets/langswitch.js" type="text/javascript"></script> 
 
 		<!-- Favicon -->
 		<link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAACaQAAAmkB5bpdnwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAUaSURBVHic7dttiFVFGMDxnyWa2poRhZEulZklUlFKQtgbVEhBXwQxsiAiKwqKJCLLLEKSNHqhInpDKrOkL32xzBeyN6go/JCUGr4RZEGatqurq/ZhdvHc2XPuvWfv2Xvvrv7hwJ05c+bMPHfmmXmeeQ4nOMFxzaCUvCm4GafUqQ3taMNe7MQmbMOROr2/hCk4hKMNvtqxDvMxVfof1SfM76MO1XptwQKM6bOed/FsAztZzdWBNzGuqA4PrnD/B6wt6mUZtGA4Thc6Nh5DM8oOwd24Ay8If1hbkY2JR8CSIiuvkpNxOR7BahyWPSK24ZoiX94MAogZg3nYJV0InXgSJxXxsmYUQDfD8BD+kS6IFbKnTiaVdEAaV2OC4pamv/EbNlYotx8vYhkWY3Z0fwbOwK3Y19vGVBoBi2XPx1qvn3FtjrbOEjZPcT1r9GIkdFNJALvLdKCI65Cg4atlInak1LNClTohr+IYkbN8XgYL6/ykKstvxFX4NcqfgcerfWEtrMfBGus4E5cm0kMErT+ryud34kZ8g7GJ/AX4Cl/maUylKXAwuj86T+VleDSqd6/8Snainjphq7DJyqSQtbMAXlFq/bUIGj0PG3FvlHeuMJoyaRYBjFPalqOCRZiXZXg/ypuL87IeqFUHXIJzaqxjHJ6J8nbi4jLPtON36fpnLm7BqK70EDyGOdU0Jq8OaOT1L17DWSn9eDgqe0CGKd0sU6A3jMR9+BEXRffewF+J9FDclVZJfxZAN2PxqWArdNMuKNYks6WsLLXqgO2CuVpvzlba4fG4By8l8pbiacf+5AsEl9/35Spu1D4gLy1YGbVlfUq5tVGZJ+IC/XUK7MNTUd6FKeVWRunr4gL9VQAcW+a6SVsSY3feVFGfa9UBpwmOynoySDCWXo7yN6SU3SAIZkhXejhaBVcaahdAbIU1kqUpeZ2CS31iIm+ChAD68xRIsgqfZNzbEqVLNkR5BbA9Z/l6sBozBS2fxp4oPTKZyCuAOYKJ2Wh2C66v23GTnp1MEvsHW5KJvDpgLc7P+UxTM1B0QDlGRum9ycTxIIB4v1AyJY4HAVwQpXcmE3l1wJV4VfPpgb2C9RfbLoP1PEneVK6iSsbQL3rnvKjHdURPd/rkqEybaNTnnQLjc5avJ4P0nO/XR+nvRKE3A0kHfCycDSSZHqXXxQ/VagtMFQ43G02bcHyepFU4yE2yKn6wCI/QnzXW0VfcqXSEbxYiXkoYSFMgyXA8EOW9l1ZwoArgfqXu8g68k1aw1inwuXCkXS/aBQ/wEtnW32g9fX/v4o+0wkWcDNWbaYJFmmX/LxE8Vd10YFFWZf11CsTb225m47Yo73kJD1BMfxTALnyYkj9JOCpLshULy1VW6xSYKURt1YvD+Ek4F0zSis9waiKvUwi32V+uwiIiRBq9D2jFF3qeUs/H15UezjsFkmGpRxUcptoLJuFbPQ9FPlJG8SXJK4C3Er+XqyEerwBmC8ZN/M+vEXaBvfreoJpI0Wm4QeMU6Gh8IN0kXi1yeualmUNlRwgB1Hukd365OoXK1ptWYUg/KITUxXQKCm+RXgz7ZhTAYFwmODOmCyZt1nTbKix1FbV9uZeVYxqe623lVdIirN+jBI/TOMcOM7PoEHZ4C1VY5/PS7J/MHMDrQvxfIcQjoNaw175isxD/97YMq64oJmuOz+bahPV8nhDX02ekxeNeIQQaDku51xe04b+ua7vgt9+hQR9OnuAExxn/A+VMZguLvsvVAAAAAElFTkSuQmCC">
@@ -64,8 +70,9 @@
 			<div class="row" style="padding:1rem;">
 				<div class="col-md-10"></div>
 				<div class="col-md-2">
-					<a href="index_pl.html" class="myButton">PL</a>
-					<a href="index_es.html" class="myButton">ES</a>
+					<a id="button_en"href="javascript:chooseStyle('none', 60)" class="myButton">EN</a>
+					<a id="button_es" href="javascript:chooseStyle('spanish', 60)" class="myButton">ES</a>
+					<a id="button_pl" href="javascript:chooseStyle('polish', 60)" class="myButton">PL</a>
 				</div>
 			</div>
 		</nav>
@@ -106,7 +113,7 @@
 			</svg>
 			<h1>Danie1 B4rrio Fierr0</h1>
 		</p>
-		<p class="sub">Writer. Information Architect. Curious&nbsp;being.</p>
+		<p class="sub"><span class="english">Writer. Information Architect. Curious&nbsp;being.</span><span class="spanish">Redactor. Arquitecto de información. Mente&nbsp;curiosa.</span><span class="polish">Redaktor. Architekt informacji. Ciekawski.</span></p>
 		</div>
 
 		<div class="container" style="margin-bottom: 1em!important">
@@ -154,23 +161,26 @@
 						            </p>
         			<p class="text-center lead">SOAP!16</p>
         		</a>
-		      	<p class="text-center">I was in Kraków and&nbsp;did&nbsp;some&nbsp;talking.<br>Some nice people <a href="https://www.youtube.com/watch?v=2p83YvZuVHY">recorded it</a>.</p>
-		      	<p class="text-center"><br></p>
+		      	<p class="text-center">
+							<span class="english">I was in Kraków and&nbsp;did&nbsp;some&nbsp;talking.<br>Some nice people <a href="https://www.youtube.com/watch?v=2p83YvZuVHY">recorded it</a>.</span>
+							<span class="spanish">Estuve en Cracovia y&nbsp;di&nbsp;una&nbsp;charla.<br>Alguien se tomó la molestia de <a href="https://www.youtube.com/watch?v=2p83YvZuVHY">grabarla</a>.<br>(En Inglés)</span>
+							<span class="polish">Byłem w Krakowie z&nbsp;prezentacją.<br>Mili ludzie to <a href="https://www.youtube.com/watch?v=2p83YvZuVHY">nagrali</a>.<br>(Po angilelsku)</span></p>
+						<p class="text-center"><br></p>
 		    </div>
 		    <div class="col-sm-4">
     			<a href="https://github.com/db4rr/">
             		<p class="text-center"><i class="fa fa-github fa-5x fa-5x"></i></p>
-        			<p class="text-center lead">My repo</p>
+        			<p class="text-center lead"><span class="english">My repo</span><span class="spanish">Mi repositorio</span><span class="polish">Moje repo</span></p>
         		</a>
-		    	<p class="text-center">Learning by doing.<br>And there is a lot to learn.</p>
+		    	<p class="text-center"><span class="english">Learning by doing.<br>And there is a lot to learn.</span><span class="spanish">Aprendo experimentando.<br>Hay mucho que aprender.</span><span class="polish">Uczę się.<br>Najlepiej na przykładach.</span></p>
 	   			<p class="text-center"><br></p>
 		    </div>
 		    <div class="col-sm-4">
 		      	<a href="IA_6mins/index.html">
             		<p class="text-center"><i class="fa fa-slideshare fa-5x fa-5x"></i></p>
-        			<p class="text-center lead">IA in 6 minutes</p>
+        			<p class="text-center lead"><span class="english">IA in 6 minutes</span><span class="spanish">IA en 6 minutos</span><span class="polish">IA w 6 minut</span></p>
         		</a>
-		     	<p class="text-center">A <a href="http://www.pechakucha.org">pechakucha</a>.<br>Very much inspired by <a href="http://abbytheia.com/">Abby Covert</a>.</p>
+		     	<p class="text-center"><span class="english">A <a href="http://www.pechakucha.org">pechakucha</a>.<br>Very much inspired by <a href="http://abbytheia.com/">Abby Covert</a>.</span><span class="spanish">Una <a href="http://www.pechakucha.org">pechakucha</a> sobre arquitectura&nbsp;de&nbsp;información.<br>Inspirada en el trabajo de <a href="http://abbytheia.com/">Abby Covert</a>.</span><span class="polish"><a href="http://www.pechakucha.org">Pechakucha</a> o architektura informacji.<br>Mocno inspirowana przez <a href="http://abbytheia.com/">Abby Covert</a>.</span></p>
 		      	<p class="text-center"><br></p>
 		    </div>
 		  </div>
@@ -178,11 +188,19 @@
 		  	<div class="row">
 					<div class="col-sm-4"></div>
 					<div class="col-sm-4">
-			      	<a href="wbwwb/index.html">
+			      	<a class="english" href="wbwwb/index.html">
 	            		<p class="text-center"><i class="fa fa-mouse-pointer fa-5x fa-5x"></i></p>
 	        			<p class="text-center lead">We become what we behold</p>
 	        		</a>
-			     	<p class="text-center">A fork of <a href="http://ncase.me">Nicky Case</a>'s game.<br>Pending translation into Spanish and Polish.</p>
+							<a class="spanish" href="wbwwb_es/index.html">
+	            		<p class="text-center"><i class="fa fa-mouse-pointer fa-5x fa-5x"></i></p>
+	        			<p class="text-center lead">Somos lo que vemos</p>
+	        		</a>
+							<a class="polish" href="wbwwb/index.html">
+									<p class="text-center"><i class="fa fa-mouse-pointer fa-5x fa-5x"></i></p>
+								<p class="text-center lead">We become what we behold</p>
+							</a>
+			     	<p class="text-center"><span class="english">A fork of <a href="http://ncase.me">Nicky Case</a>'s game.<br>Also translated into <a href="wbwwb_es/index.html">Spanish</a> and Polish (soon).</span><span class="spanish">Una traducción del juego de <a href="http://ncase.me">Nicky Case</a>.</span><span class="polish">Tłumaczenie gry <a href="http://ncase.me">Nicky Case</a>'a.</span></p>
 			      	<p class="text-center"><br></p>
 			    </div>
 					<div class="col-sm-4"></div>
@@ -193,7 +211,7 @@
 		<!-- Site footer -->
 		    <div class="footer navbar-fixed-bottom">
 		        <div class="container text-center" style="background-image:url(assets/background.png)!important;background-attachment: fixed!important;background-position: center!important;background-size: cover!important; width:100%; padding-top:0.5em">
-		    		<p><strong>Want to say hi?</strong> There's <a href="https://github.com/db4rr/">Github</a> and <a href="https://pl.linkedin.com/in/daniel-barrio-fierro-a95053110">LinkedIn</a>.</p>
+		    		<p><span class="english"><strong>Want to say hi?</strong> There's <a href="https://github.com/db4rr/">Github</a> and <a href="https://pl.linkedin.com/in/daniel-barrio-fierro-a95053110">LinkedIn</a>.</span><span class="spanish"><strong>¿Quieres decirme algo?</strong> Estoy en <a href="https://github.com/db4rr/">Github</a> y <a href="https://pl.linkedin.com/in/daniel-barrio-fierro-a95053110">LinkedIn</a>.</span><span class="polish"><strong>Przywitaj się!</strong> Mamy na to <a href="https://github.com/db4rr/">Github</a> i <a href="https://pl.linkedin.com/in/daniel-barrio-fierro-a95053110">LinkedIn</a>.</span></p>
 				</div>
 			</div>
 
