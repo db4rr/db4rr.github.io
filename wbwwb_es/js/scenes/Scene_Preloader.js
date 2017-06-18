@@ -93,7 +93,7 @@ function Scene_Preloader(){
 
 	}, function(ratio){
 		var percent = Math.floor(ratio*100);
-		text.text = "loading... "+percent+"%";
+		text.text = "cargando... "+percent+"%";
 	}, false);
 
 }
