@@ -6,7 +6,7 @@ Hakim made a great tool -- try it!
 
 I am also translating some games by the very talented [Nicky Case](https://github.com/ncase).
 
-I am also taking advantage the [Bootstrap CDN](getbootstrap.com), with [Font Awesome](http://fontawesome.io/) icons.
+I am also taking advantage of the [Bootstrap CDN](getbootstrap.com), with [Font Awesome](http://fontawesome.io/) icons.
 They make things almost too easy.
 
 You can also navigate my projects via http://db4rr.github.io/
