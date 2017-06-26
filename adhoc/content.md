@@ -1,6 +1,6 @@
 ## Daniel Barrio Fierro
 ### Information architect
-Euroculture MA, cohort 2012
+Euroculture MA, 2012 cohort
 Note: What does an IA do?
 
 
