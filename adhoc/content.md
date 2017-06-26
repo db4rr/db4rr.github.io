@@ -1,12 +1,16 @@
-# Slide 1
-This is my first Slide
-Note: This is a note
+# Daniel Barrio Fierro
+### Information architect
+Euroculture MA, cohort 2012
+Note: What does an IA do?
 
 
 
-# Slide 2-1
-This slide has vertical children
+## Taxonomies
+## Onthologies
+## Structured writing
+Note: Where do I do this?
 
 
-# Slide 2-2
-See? It went down
+
+![Dolby logo](https://upload.wikimedia.org/wikipedia/commons/3/32/Dolby_logo.svg)
+Note: How did I get here
