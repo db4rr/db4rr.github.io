@@ -1,6 +1,6 @@
 var pubnub = PUBNUB({
-    publish_key : 'pub-c-4b844d24-d357-4c0a-aeaa-b82e30decead',
-    subscribe_key : 'sub-c-56c04294-b696-11e6-b37b-02ee2ddab7fe'
+    publish_key : 'pub-c-7ffe21bd-025f-4e6f-894b-a9e16efff494',
+    subscribe_key : 'sub-c-4d8d4422-76af-11e7-91f5-0619f8945a4f'
 });
 
 pubnub.subscribe({
