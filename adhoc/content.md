@@ -11,6 +11,11 @@ Note: Komunikacja Techniczna
 ![Dolby logo](http://logok.org/wp-content/uploads/2014/05/Dolby-logo.png)
 
 
+### MeetContentWRO
+![soap logo](http://soapconf.com/wp-content/uploads/2017/02/logo.png2)
+Note: Co my we dwóch robimy...
+
+
 
 ## Technical Communication
 ### Komunikacja Techniczna
@@ -18,8 +23,8 @@ Note: Komunikacja Techniczna
 
 
 * **STC:** Any form of communication that focuses on technical or specialized topics, communicates specifically by using technology or provides instructions on how to do something.
-* **ISTC:** Factual communication, usually about products and services.
-* **EATC:** The process of defining, creating and delivering information products for the safe, efficient and effective use of products (technical systems, software, services).
+[//]: # (* **ISTC:** Factual communication, usually about products and services.)
+[//]: # (* **EATC:** The process of defining, creating and delivering information products for the safe, efficient and effective use of products (technical systems, software, services).)
 Note:  Society for Technical Communication, Institute of Scientific and Technical Communicators, European Association for Technical Communication
 
 
@@ -28,7 +33,7 @@ Note:  Society for Technical Communication, Institute of Scientific and Technica
 
 
 
-### **Jakie są tipy dokumentacji techniczny?**<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
+### **Jakie są typy dokumentacji technicznej?**<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
 # **Dobra**<!-- .element: style="font-family: 'Lato', Impact, sans-serif; color: #4CAF50"  class="fragment" data-fragment-index="1" --> **Zła**<!-- .element: style="font-family: 'Lato', Impact, sans-serif; color: #F44336" class="fragment" data-fragment-index="2" -->
 Note: Czy robi to, co chcemy?
 
@@ -52,7 +57,7 @@ Note: Kanał dostarczania - PDF? Papier? HTML? Github?
 
 
 ### Odbiorca
-- Wewnętrzny/Zewnętrzny
+- Wewnętrzny / Zewnętrzny
 - Poziom wiedzy
 - Oczekiwana forma
 - Aspekty kulturowe
@@ -62,7 +67,7 @@ Note: tłumaczyć? humor?
 
 ### Cel i kontekst
 - Jaki jest cel naszego przekazu?
-- W jakiej sytuacji nasz dokument będzie używany?
+- W jakiej sytuacji nasz dokument będzie czytany?
 Note: Ile chcemy/możemy mówić?
 
 
@@ -118,17 +123,18 @@ Note: Architekt: Information architecture, struktura, granulacja
 
 
 
-### Tworzenia dokumentacji
+### Tworzenie dokumentacji
 * Zanim powstanie dokumentacja<!-- .element: class="fragment" data-fragment-index="1" -->
-* Projektowanie documentacji<!-- .element: class="fragment" data-fragment-index="2" -->
-* Tworzenia treści<!-- .element: class="fragment" data-fragment-index="3" -->
+* Projektowanie dokumentacji<!-- .element: class="fragment" data-fragment-index="2" -->
+* Tworzenie treści<!-- .element: class="fragment" data-fragment-index="3" -->
 * Weryfikacja<!-- .element: class="fragment" data-fragment-index="4" -->
 * Publikacja<!-- .element: class="fragment" data-fragment-index="5" -->
+* Utrzymanie<!-- .element: class="fragment" data-fragment-index="6" -->
 
 
 
 ### Zanim powstanie dokumentacja
-* Kim jest odbiorca
+* Kim jest odbiorca?
 * Rodzaje dokumentów
 * Zagadnienia prawne<!-- .element: class="fragment" data-fragment-index="1" -->
 * Planowanie czasu i zasobów<!-- .element: class="fragment" data-fragment-index="1" -->
@@ -137,9 +143,9 @@ Note: Z kim będziemy współpracować, kiedy mamy termin.
 
 
 
-### Projektowanie documentacji
+### Projektowanie dokumentacji
 * Kanał dostarczania
-* Typu dokumentu
+* Typy dokumentu
 * Spis treści
 * Rozmiar sekcji
 * Referencje<!-- .element: class="fragment" data-fragment-index="1" -->
@@ -149,7 +155,7 @@ Note: Accessibility, Dostępność,
 
 
 
-### **Tworzenia treści**<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
+### **Tworzenie treści**<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
 * Narzędzia
 * Standardy
 * Księga stylu (Styleguide)
@@ -172,10 +178,25 @@ Notes: Korygowanie
 * Platforma dostępu
 Notes: ogólno dostępny czy dla klientów...
 
+### Utrzymanie
+* Poprawa błędów
+* Nowe wersje funkcjonalności
+* Adaptacja produktu
+* Wersjonowanie dokumentów
+Notes: wprowadzanie poprawek do istniejącej dokumentacji
 
+
+
+### Społeczność<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
+![Community](http://soapconf.com/wp-content/uploads/2017/02/logo.png2)
+Note: warto dodać logo np. Write The Docs i meetcontent
+
+
+### Certyfikacja<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
+![Certification](https://i1.wp.com/techwriter.pl/wp-content/uploads/2015/08/itcqf_logo_black-e1442054514270.jpg?fit=300%2C132)
+Note: dostępne kursy w Polsce
 
 ![RTFM2](http://s2.quickmeme.com/img/c1/c1fa1ad064066b5c2ce7f4cfe448c742bdc1451557e3f8c15d6db50aede8758d.jpg)
-
 
 
 ![RTFM](https://pbs.twimg.com/media/Cgd7ixyXEAAaN1Z.jpg)
