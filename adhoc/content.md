@@ -28,11 +28,13 @@ Note:  Society for Technical Communication, Institute of Scientific and Technica
 
 
 
+### **Jakie są tipy documentacji techniczny?**<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" class="fragment" data-fragment-index="1" -->
+## **Dobra**<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" --> **Zła**<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" class="fragment" data-fragment-index="2" -->
+Note: Czy robi to, co chcemy?
+
+
+
 ### **Jakie są tipy documentacji techniczny?**<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
-Note: Dobra vs Zła
-
-
-
 - Instrukcje obsługi<!-- .element: class="fragment" data-fragment-index="1" -->
 - Specifikacje<!-- .element: class="fragment" data-fragment-index="2" -->
 - Pomoc/Wsparcie<!-- .element: class="fragment" data-fragment-index="3" -->
