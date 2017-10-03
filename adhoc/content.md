@@ -18,9 +18,9 @@ Note: Komunikacja Techniczna
 
 
 * **STC:** Any form of communication that focuses on technical or specialized topics, communicates specifically by using technology or provides instructions on how to do something.
-* **ISTC:** Factual communication, usually about products and services.<!-- .element: class="fragment" data-fragment-index="1" -->
+* **ISTC:** Factual communication, usually about products and services.
 * **EATC:** The process of defining, creating and delivering information products for the safe, efficient and effective use of products (technical systems, software, services).
-Note:  Society for Technical Communication, Institute of Scientific and Technical Communicators, European Association for Technical Communication<!-- .element: class="fragment" data-fragment-index="2" -->
+Note:  Society for Technical Communication, Institute of Scientific and Technical Communicators, European Association for Technical Communication
 
 
 
