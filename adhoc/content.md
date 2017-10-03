@@ -1,6 +1,5 @@
-## Komunikacja Techniczna
-#### Tomasz Prus
-#### Daniel Barrio Fierro
+# Komunikacja Techniczna
+### Tomasz Prus | Daniel Barrio Fierro
 Note: Komunikacja Techniczna
 
 
@@ -13,15 +12,15 @@ Note: Komunikacja Techniczna
 
 
 
-## Technical Communication
+# Technical Communication
 ### Komunikacja Techniczna
 
 
 
 * **STC:** Any form of communication that focuses on technical or specialized topics, communicates specifically by using technology or provides instructions on how to do something.
-* **ISTC:** Factual communication, usually about products and services.
+* **ISTC:** Factual communication, usually about products and services.<!-- .element: class="fragment" data-fragment-index="1" -->
 * **EATC:** The process of defining, creating and delivering information products for the safe, efficient and effective use of products (technical systems, software, services).
-Note:  Society for Technical Communication, Institute of Scientific and Technical Communicators, European Association for Technical Communication
+Note:  Society for Technical Communication, Institute of Scientific and Technical Communicators, European Association for Technical Communication<!-- .element: class="fragment" data-fragment-index="2" -->
 
 
 
@@ -34,11 +33,11 @@ Note: Dobra vs Zła
 
 
 
-- Instrukcje obsługi
-- Specifikacje
-- Pomoc/Wsparcie
-- Knowledge Bases
-- eLearning
+- Instrukcje obsługi<!-- .element: class="fragment" data-fragment-index="1" -->
+- Specifikacje<!-- .element: class="fragment" data-fragment-index="2" -->
+- Pomoc/Wsparcie<!-- .element: class="fragment" data-fragment-index="3" -->
+- Knowledge Bases<!-- .element: class="fragment" data-fragment-index="4" -->
+- eLearning<!-- .element: class="fragment" data-fragment-index="5" -->
 Note: Kanał dostarczania - PDF? Papier? HTML? Github?
 
 
@@ -101,30 +100,30 @@ Note: Architekt: Information architecture, struktura, granulacja
 
 
 ### Technical Writer
-- Detektyw
-- Negocjator
-- Tłumacz
-- Grafik
-- Tester
-- Architekt
+- Detektyw<!-- .element: class="fragment" data-fragment-index="1" -->
+- Negocjator<!-- .element: class="fragment" data-fragment-index="2" -->
+- Tłumacz<!-- .element: class="fragment" data-fragment-index="3" -->
+- Grafik<!-- .element: class="fragment" data-fragment-index="4" -->
+- Tester<!-- .element: class="fragment" data-fragment-index="5" -->
+- Architekt<!-- .element: class="fragment" data-fragment-index="6" -->
 
 
 
 ### Tworzenia dokumentacji
-* Zanim powstanie dokumentacja
-* Projektowanie documentacji
-* Tworzenia treści
-* Weryfikacja
-* Publikacja
+* Zanim powstanie dokumentacja<!-- .element: class="fragment" data-fragment-index="1" -->
+* Projektowanie documentacji<!-- .element: class="fragment" data-fragment-index="2" -->
+* Tworzenia treści<!-- .element: class="fragment" data-fragment-index="3" -->
+* Weryfikacja<!-- .element: class="fragment" data-fragment-index="4" -->
+* Publikacja<!-- .element: class="fragment" data-fragment-index="5" -->
 
 
 
 ### Zanim powstanie dokumentacja
 * Kim jest odbiorca
 * Rodzaje dokumentów
-* Zagadnienia prawne
-* Planowanie czasu i zasobów
-* Definicja ról
+* Zagadnienia prawne<!-- .element: class="fragment" data-fragment-index="1" -->
+* Planowanie czasu i zasobów<!-- .element: class="fragment" data-fragment-index="1" -->
+* Definicja ról<!-- .element: class="fragment" data-fragment-index="1" -->
 Note: Z kim będziemy współpracować, kiedy mamy termin.
 
 
@@ -134,9 +133,9 @@ Note: Z kim będziemy współpracować, kiedy mamy termin.
 * Typu dokumentu
 * Spis treści
 * Rozmiar sekcji
-* Referencje
-* "Accessibility"
-* "Reuse" i "single-sourcing"
+* Referencje<!-- .element: class="fragment" data-fragment-index="1" -->
+* "Accessibility"<!-- .element: class="fragment" data-fragment-index="2" -->
+* "Reuse" i "single-sourcing"<!-- .element: class="fragment" data-fragment-index="3" -->
 Note: Accessibility, Dostępność,
 
 
