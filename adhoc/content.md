@@ -168,7 +168,7 @@ Note: CMS, static site generators, DITA, madcap
 * Peer-review
 * QA/Testers
 * Sign-off
-Notes: Korygowanie
+Note: Korygowanie
 
 
 
@@ -176,27 +176,33 @@ Notes: Korygowanie
 * Lokalizacja
 * Wydruk
 * Platforma dostępu
-Notes: ogólno dostępny czy dla klientów...
+Note: ogólno dostępny czy dla klientów...
+
+
 
 ### Utrzymanie
 * Poprawa błędów
 * Nowe wersje funkcjonalności
 * Adaptacja produktu
 * Wersjonowanie dokumentów
-Notes: wprowadzanie poprawek do istniejącej dokumentacji
+Note: wprowadzanie poprawek do istniejącej dokumentacji
 
 
 
 ### Społeczność<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
-![Community](http://soapconf.com/wp-content/uploads/2017/02/logo.png2)
+![Community](http://soapconf.com/wp-content/uploads/2017/02/logo.png)
 Note: warto dodać logo np. Write The Docs i meetcontent
+
 
 
 ### Certyfikacja<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
 ![Certification](https://i1.wp.com/techwriter.pl/wp-content/uploads/2015/08/itcqf_logo_black-e1442054514270.jpg?fit=300%2C132)
 Note: dostępne kursy w Polsce
 
+
+
 ![RTFM2](http://s2.quickmeme.com/img/c1/c1fa1ad064066b5c2ce7f4cfe448c742bdc1451557e3f8c15d6db50aede8758d.jpg)
+
 
 
 ![RTFM](https://pbs.twimg.com/media/Cgd7ixyXEAAaN1Z.jpg)
