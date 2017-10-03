@@ -28,7 +28,7 @@ Note:  Society for Technical Communication, Institute of Scientific and Technica
 
 
 
-### Jakie są tipy documentacji techniczny?
+### **Jakie są tipy documentacji techniczny?**<!-- .element: style="font-family: "Lato", Impact, sans-serif;" -->
 Note: Dobra vs Zła
 
 
@@ -140,7 +140,7 @@ Note: Accessibility, Dostępność,
 
 
 
-### Tworzenia treści
+### **Tworzenia treści**<!-- .element: style="font-family: "Lato", Impact, sans-serif;" -->
 * Narzędzia
 * Standardy
 * Księga stylu (Styleguide)
