@@ -28,8 +28,8 @@ Note:  Society for Technical Communication, Institute of Scientific and Technica
 
 
 
-### **Jakie są tipy documentacji techniczny?**<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" class="fragment" data-fragment-index="1" -->
-## **Dobra**<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" --> **Zła**<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" class="fragment" data-fragment-index="2" -->
+### **Jakie są tipy documentacji techniczny?**<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
+# **Dobra**<!-- .element: style="font-family: 'Lato', Impact, sans-serif; color: #4CAF50"  class="fragment" data-fragment-index="1" --> **Zła**<!-- .element: style="font-family: 'Lato', Impact, sans-serif; color: #F44336" class="fragment" data-fragment-index="2" -->
 Note: Czy robi to, co chcemy?
 
 
@@ -66,48 +66,55 @@ Note: tłumaczyć? humor?
 Note: Ile chcemy/możemy mówić?
 
 
+
 ## Kim jest Technical Writer?
 Note: Pisarz techniczny, Information developer, Documentarian...
 
 
 
+### Technical Writer: Detektyw<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
 ![Detective](https://www.earthrangers.com/content/wildwire/detective.png)
 Note: Detectyw: powód zmian, źródła wiedzy, historie
 
 
 
+### Technical Writer: Negocjator<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
 ![Negotiation](https://cdn.munplanet.com/storage/uploads/52209627db7c13603b000001/topic/background_image/52e14088db7c1397780008a1/Negotiation.jpg)
 Note: Negocjator: devs, biznes, równoległych projektów
 
 
 
+### Technical Writer: Tłumacz<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
 ![Translator](http://icons.iconarchive.com/icons/marcus-roberto/google-play/512/Google-Translate-icon.png)
 Note: Tłumacz: terminologia firmowa/branżowa, poziom wiedzy, lokalizacja...
 
 
 
+### Technical Writer: Grafik<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
 ![Designer](https://usabilitygeek.com/wp-content/uploads/2014/03/when-to-prototype-when-to-wireframe-fidelity.jpg)
 Note: Grafik: terminologia firmowa/branżowa, poziom wiedzy, lokalizacja...
 
 
 
+### Technical Writer: Tester<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
 ![Tester](https://nexiilabs.com/blog/wp-content/uploads/2014/05/shutterstock_codebug.jpg)
 Note: Tester: UI, hardware, log bugs...
 
 
 
+### Technical Writer: Architekt<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
 ![Architect](http://sagitas.com/wp-content/uploads/2016/10/plans.png)
 Note: Architekt: Information architecture, struktura, granulacja
 
 
 
 ### Technical Writer
-- Detektyw<!-- .element: class="fragment" data-fragment-index="1" -->
-- Negocjator<!-- .element: class="fragment" data-fragment-index="2" -->
-- Tłumacz<!-- .element: class="fragment" data-fragment-index="3" -->
-- Grafik<!-- .element: class="fragment" data-fragment-index="4" -->
-- Tester<!-- .element: class="fragment" data-fragment-index="5" -->
-- Architekt<!-- .element: class="fragment" data-fragment-index="6" -->
+- Detektyw
+- Negocjator
+- Tłumacz
+- Grafik
+- Tester
+- Architekt
 
 
 
@@ -156,6 +163,7 @@ Note: CMS, static site generators, DITA, madcap
 * QA/Testers
 * Sign-off
 Notes: Korygowanie
+
 
 
 ### Publikacja
