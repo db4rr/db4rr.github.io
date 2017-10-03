@@ -88,18 +88,13 @@
       // the URL of the WAMP Router (Crossbar.io)
       //
       var wsuri;
-      if (document.location.origin == "file://") {
          wsuri = "wss://demo.crossbar.io/ws";
-      } else {
-         wsuri = (document.location.protocol === "http:" ? "ws:" : "wss:") + "//" +
-                     document.location.host + "/ws";
-      }
 
       // the WAMP connection to the Router
       //
       var connection = new autobahn.Connection({
          url: wsuri, // replace with URL of WAMP router if this doesn't serve the file!
-         realm: "iot_cookbook"
+         realm: "realm1"
       });
 
 

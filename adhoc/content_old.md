@@ -1,4 +1,3 @@
-## Tomasz Prus
 ## Daniel Barrio Fierro
 ### Information architect
 Euroculture MA, 2012 cohort
