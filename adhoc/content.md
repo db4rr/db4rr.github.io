@@ -28,13 +28,13 @@ Note:  Society for Technical Communication, Institute of Scientific and Technica
 
 
 
-### **Jakie są tipy documentacji techniczny?**<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
+### **Jakie są tipy dokumentacji techniczny?**<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
 # **Dobra**<!-- .element: style="font-family: 'Lato', Impact, sans-serif; color: #4CAF50"  class="fragment" data-fragment-index="1" --> **Zła**<!-- .element: style="font-family: 'Lato', Impact, sans-serif; color: #F44336" class="fragment" data-fragment-index="2" -->
 Note: Czy robi to, co chcemy?
 
 
 
-### Documentacja techniczna
+### Dokumentacja techniczna
 - Instrukcje obsługi
 - Specifikacje
 - Pomoc/Wsparcie
@@ -52,7 +52,7 @@ Note: Kanał dostarczania - PDF? Papier? HTML? Github?
 
 
 ### Odbiorca
-- Wewnętrzny / Zewnętrzny
+- Wewnętrzny/Zewnętrzny
 - Poziom wiedzy
 - Oczekiwana forma
 - Aspekty kulturowe
@@ -62,7 +62,7 @@ Note: tłumaczyć? humor?
 
 ### Cel i kontekst
 - Jaki jest cel naszego przekazu?
-- W jakiej sytuacji nasz dokument będzie czytany?
+- W jakiej sytuacji nasz dokument będzie używany?
 Note: Ile chcemy/możemy mówić?
 
 
