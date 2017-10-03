@@ -146,7 +146,7 @@ Note: Accessibility, Dostępność,
 * Narzędzia
 * Standardy
 * Księga stylu (Styleguide)
-Notes: CMS, static site generators, DITA, madcap
+Note: CMS, static site generators, DITA, madcap
 
 
 
