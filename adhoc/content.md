@@ -12,7 +12,7 @@ Note: Komunikacja Techniczna
 
 
 
-# Technical Communication
+## Technical Communication
 ### Komunikacja Techniczna
 
 
