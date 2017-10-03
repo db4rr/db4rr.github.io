@@ -34,12 +34,12 @@ Note: Czy robi to, co chcemy?
 
 
 
-### **Jakie są tipy documentacji techniczny?**<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
-- Instrukcje obsługi<!-- .element: class="fragment" data-fragment-index="1" -->
-- Specifikacje<!-- .element: class="fragment" data-fragment-index="2" -->
-- Pomoc/Wsparcie<!-- .element: class="fragment" data-fragment-index="3" -->
-- Knowledge Bases<!-- .element: class="fragment" data-fragment-index="4" -->
-- eLearning<!-- .element: class="fragment" data-fragment-index="5" -->
+### Documentacja techniczna
+- Instrukcje obsługi
+- Specifikacje
+- Pomoc/Wsparcie
+- Knowledge Bases
+- eLearning
 Note: Kanał dostarczania - PDF? Papier? HTML? Github?
 
 
