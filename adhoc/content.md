@@ -190,7 +190,8 @@ Note: wprowadzanie poprawek do istniejącej dokumentacji
 
 
 ### Społeczność<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
-![Community](http://soapconf.com/wp-content/uploads/2017/02/logo.png)
+![Community1](http://soapconf.com/wp-content/uploads/2017/02/logo.png)
+![Community2](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGaYzZ5je12HXsv6sp5tsdqYJXvK5MSzZ3dqrJsldDkKf7uW3M)
 Note: warto dodać logo np. Write The Docs i meetcontent
 
 
