@@ -212,7 +212,7 @@ Note: dostępne kursy w Polsce
 
 
 
-Tomasz.Prus@unit4.com  
+tomasz.prus@unit4.com  
 dbarr@dolby.com  
 [db4rr.github.io](db4rr.github.io)  
 [meetcontent.org](meetcontent.org)  
