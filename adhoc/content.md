@@ -214,5 +214,5 @@ Note: dostępne kursy w Polsce
 
 tomasz.prus@unit4.com  
 dbarr@dolby.com  
-[db4rr.github.io](db4rr.github.io)  
-[meetcontent.org](meetcontent.org)  
+[db4rr.github.io](http://db4rr.github.io)  
+[meetcontent.org](http://meetcontent.org)  
