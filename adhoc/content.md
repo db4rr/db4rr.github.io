@@ -12,8 +12,8 @@ Note: Komunikacja Techniczna
 
 
 
-### meetcontent.org
 ![Community](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGaYzZ5je12HXsv6sp5tsdqYJXvK5MSzZ3dqrJsldDkKf7uW3M)
+### meetcontent.org
 Note: Co my we dwóch robimy...
 
 
@@ -43,7 +43,7 @@ Note: Czy robi to, co chcemy?
 
 ### Dokumentacja techniczna
 - Instrukcje obsługi
-- Specifikacje
+- Specyfikacje
 - Pomoc/Wsparcie
 - Knowledge Bases
 - eLearning
