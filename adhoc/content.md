@@ -13,7 +13,7 @@ Note: Komunikacja Techniczna
 
 
 ### meetcontent.org
-![Community2](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGaYzZ5je12HXsv6sp5tsdqYJXvK5MSzZ3dqrJsldDkKf7uW3MM)
+![Community](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGaYzZ5je12HXsv6sp5tsdqYJXvK5MSzZ3dqrJsldDkKf7uW3M)
 Note: Co my we dwóch robimy...
 
 
@@ -23,7 +23,8 @@ Note: Co my we dwóch robimy...
 
 
 
-* **STC:** Any form of communication that focuses on technical or specialized topics, communicates specifically by using technology or provides instructions on how to do something.
+Any form of communication that focuses on technical or specialized topics, communicates specifically by using technology or provides instructions on how to do something.  
+(Society for Technical Communication)
 [//]: # (* **ISTC:** Factual communication, usually about products and services.)
 [//]: # (* **EATC:** The process of defining, creating and delivering information products for the safe, efficient and effective use of products (technical systems, software, services).)
 Note:  Society for Technical Communication, Institute of Scientific and Technical Communicators, European Association for Technical Communication
@@ -208,4 +209,10 @@ Note: dostępne kursy w Polsce
 
 
 ![RTFM](https://pbs.twimg.com/media/Cgd7ixyXEAAaN1Z.jpg)
-db4rr.github.io
+
+
+
+Tomasz.Prus@unit4.com  
+dbarr@dolby.com  
+[db4rr.github.io](db4rr.github.io)  
+[meetcontent.org](meetcontent.org)  
