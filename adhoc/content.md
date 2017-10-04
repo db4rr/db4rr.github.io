@@ -11,8 +11,9 @@ Note: Komunikacja Techniczna
 ![Dolby logo](http://logok.org/wp-content/uploads/2014/05/Dolby-logo.png)
 
 
-### MeetContentWRO
-![soap logo](http://soapconf.com/wp-content/uploads/2017/02/logo.png2)
+
+### meetcontent.org
+![Community2](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGaYzZ5je12HXsv6sp5tsdqYJXvK5MSzZ3dqrJsldDkKf7uW3MM)
 Note: Co my we dwóch robimy...
 
 
@@ -79,7 +80,7 @@ Note: Pisarz techniczny, Information developer, Documentarian...
 
 ### Technical Writer: Detektyw<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
 ![Detective](https://www.earthrangers.com/content/wildwire/detective.png)
-Note: Detectyw: powód zmian, źródła wiedzy, historie
+Note: Detektyw: powód zmian, źródła wiedzy, historie
 
 
 
@@ -197,7 +198,7 @@ Note: warto dodać logo np. Write The Docs i meetcontent
 
 
 ### Certyfikacja<!-- .element: style="font-family: 'Lato', Impact, sans-serif;" -->
-![Certification](https://i1.wp.com/techwriter.pl/wp-content/uploads/2015/08/itcqf_logo_black-e1442054514270.jpg?fit=300%2C132)
+![Certification](https://i1.wp.com/techwriter.pl/wp-content/uploads/2015/08/itcqf_logo_black-e1442054514270.jpg)
 Note: dostępne kursy w Polsce
 
 
@@ -207,3 +208,4 @@ Note: dostępne kursy w Polsce
 
 
 ![RTFM](https://pbs.twimg.com/media/Cgd7ixyXEAAaN1Z.jpg)
+db4rr.github.io
