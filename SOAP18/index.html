@@ -1,0 +1,1297 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Soap18 | Getting things done with SVG</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/mysimplesoap.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/atom.css">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="../favicon.ico">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!-- COLORS: #347ab4 #ffad3c #2cbb81 -->
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+<div class="footer-center noprint" style="position: absolute; bottom:-1em">
+			<img src="assets/SOAP_footer_2018.png" alt="footer">
+</div>
+
+<!--#########################################################################-->
+<!--#########################################################################-->
+
+			<section></section>
+
+<!--#########################################################################-->
+
+			<section data-state="DBF">
+<!-- <h1>Getting things done with SVG</h1> -->
+<svg viewBox="0 0 300 300" y="0px" x="0px" id="DBF_dotgrid_isolated" height="15em" class="">
+	<style id="style" type="text/css">
+	  .st0{fill:none;stroke:#2d2d2d;stroke-width:15;stroke-linecap:round;}
+	</style><g transform="translate(0,0)" id="group1"><path id="path_D" d="m 120,240 45,0 c 41.4,0 75,-40.3 75,-90 0,-49.7 -33.6,-90 -75,-90 l -105,0 0,180" class="st0 PThyNdvQ_0" inkscape:connector-curvature="0" style="fill:none;stroke:#2d2d2d;stroke-width:15;stroke-linecap:round" sodipodi:nodetypes="cccccc"></path><path id="path_B1" d="m 90,90 75,0 c 8.3,0 15,6.7 15,15 0,8.3 -6.7,15 -15,15 l 0,0" class="st0 PThyNdvQ_1" inkscape:connector-curvature="0" style="fill:none;stroke:#2d2d2d;stroke-width:15;stroke-linecap:round" sodipodi:nodetypes="ccccc"></path><path id="path_B3" d="m 90,150 105,0" class="st0 PThyNdvQ_2"></path><path id="path_F1" d="m 90,180 105,0" class="st0 PThyNdvQ_3"></path><path id="path_F2" d="m 90,210 75,0" class="st0 PThyNdvQ_4"></path><path id="path_dot" d="m 90,240 0,0" class="st0 PThyNdvQ_5"></path><path sodipodi:nodetypes="ccccc" style="fill:none;stroke:#2d2d2d;stroke-width:15;stroke-linecap:round" inkscape:connector-curvature="0" class="st0 PThyNdvQ_6" d="m 90,120 105,0 c 8.3,0 15,6.7 15,15 0,8.3 -6.7,15 -15,15 l 0,0" id="path_B2"></path></g><style data-made-with="vivus-instant">.PThyNdvQ_0{stroke-dasharray:590 592;stroke-dashoffset:591;}.start .PThyNdvQ_0{animation:PThyNdvQ_draw 3500ms ease-in-out 0ms forwards;}.PThyNdvQ_1{stroke-dasharray:123 125;stroke-dashoffset:124;}.start .PThyNdvQ_1{animation:PThyNdvQ_draw 3500ms ease-in-out 0ms forwards;}.PThyNdvQ_2{stroke-dasharray:105 107;stroke-dashoffset:106;}.start .PThyNdvQ_2{animation:PThyNdvQ_draw 3500ms ease-in-out 0ms forwards;}.PThyNdvQ_3{stroke-dasharray:105 107;stroke-dashoffset:106;}.start .PThyNdvQ_3{animation:PThyNdvQ_draw 3500ms ease-in-out 0ms forwards;}.PThyNdvQ_4{stroke-dasharray:75 77;stroke-dashoffset:76;}.start .PThyNdvQ_4{animation:PThyNdvQ_draw 3500ms ease-in-out 0ms forwards;}.PThyNdvQ_5{stroke-dasharray:0 2;stroke-dashoffset:1;}.start .PThyNdvQ_5{animation:PThyNdvQ_draw 3500ms ease-in-out 0ms forwards;}.PThyNdvQ_6{stroke-dasharray:153 155;stroke-dashoffset:154;}.start .PThyNdvQ_6{animation:PThyNdvQ_draw 3500ms ease-in-out 0ms forwards;}@keyframes PThyNdvQ_draw{100%{stroke-dashoffset:0;}}@keyframes PThyNdvQ_fade{0%{stroke-opacity:1;}90.3225806451613%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
+</svg>
+
+			</section>
+
+<!--#########################################################################-->
+
+			<section><h1 style="font-family:monospace; font-size:5em">&lt;svg&gt;</h1>
+<pre style="font-size: 0.5em;"><code class="xml" data-trim contenteditable style="word-wrap:break-word;">
+<svg viewBox="0 0 300 300" y="0px" x="0px" id="DBF_dotgrid_isolated">
+  <style id="style" type="text/css">
+    .st0{fill:none;stroke:#2d2d2d;stroke-width:15;stroke-linecap:round;}
+  </style>
+  <g id="group1" transform="translate(0,0)">
+    <path id="path_D" d="M 60,240 60,60 m 105,0 -105,0 m 60,180 45,0 m 0,-180 c 41.4,0 75,40.3 75,90 m -75,90 c 41.4,0 75,-40.3 75,-90" class="st0"/>
+    <path id="path_B1" d="m 90,90 75,0 m 0,0 c 8.3,0 15,6.7 15,15 l 0,0 m 0,0 c 0,8.3 -6.7,15 -15,15 l 0,0" class="st0"/>
+    <path id="path_B2" d="m 90,120 105,0 m 0,0 c 8.3,0 15,6.7 15,15 l 0,0 m -15,15 c 8.3,0 15,-6.7 15,-15 l 0,0" class="st0"/>
+    <path id="path_B3" d="m 90,150 105,0" class="st0"/>
+    <path id="path_F1" d="m 90,180 105,0" class="st0"/>
+    <path id="path_F2" d="m 90,210 75,0" class="st0"/>
+    <path id="path_dot" d="m 90,240 0,0" class="st0"/>
+  </g>
+</svg>
+</code></pre>
+				<aside class="notes">
+					Ok, I got it, vectors. Coordinates. I'll go back to this.
+					- Paths defined by coordinates
+					- resolution independent & responsive
+					- we can style it (classes)
+					- we can interact with it (ids)
+				</aside>
+			</section>
+
+<!--#########################################################################-->
+
+			<section>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   height="8em"
+   viewBox="0 0 150 200"
+   y="0px"
+   x="0px"
+   id="Layer_1"
+   version="1.1">
+  <style id="style" type="text/css">
+    .st1{fill:#2d2d2d;stroke:none;}
+  </style>
+	<g transform="translate(-100,-100)" id="g3">
+	<g>
+		<path id="path7" d="m 229.682,226.324 -7.438,-13.946 -6.971,0 c 1.294,2.36 10.421,19.523 10.421,19.523 l 0.001,11.314 7.484,0 0.002,-11.268 c 0,0 9.478,-17.192 10.82,-19.568 l -6.621,0 -7.698,13.945 z" class="st1"/>
+		<path id="path9" d="m 156.758,214.098 c -2.121,-1.48 -5.702,-2.258 -10.351,-2.258 -4.544,0 -7.843,0.633 -10.374,2.27 -2.641,1.708 -3.889,4.564 -3.889,9.032 l 0,9.712 c 0,4.481 1.297,7.509 3.86,9.014 2.078,1.447 5.463,2.133 10.403,2.133 4.869,0 8.351,-0.705 10.339,-2.094 2.577,-1.6 3.919,-4.717 3.919,-9.052 l 0,-9.712 c 0,-4.257 -1.315,-7.299 -3.907,-9.045 z m -3.077,18.324 c 0,5.471 -1.91,6.719 -7.274,6.719 -5.368,0 -7.275,-1.248 -7.275,-6.719 l 0,-9.239 c 0,-5.335 1.907,-6.488 7.275,-6.488 5.364,0 7.274,1.153 7.274,6.488 l 0,9.239 z" class="st1"/>
+		<path id="path11" d="m 115.445,212.379 -15.445,0 0,30.836 16.525,0 c 8.149,0 11.177,-3.319 11.177,-12.263 l 0,-6.776 c 0,-8.489 -3.434,-11.797 -12.257,-11.797 z m 5.352,19.315 c 0,5.4 -2.881,6.761 -5.297,6.761 l -8.538,0 0,-21.548 8.538,0 c 2.416,0 5.297,1.363 5.297,6.385 l 0,8.402 z" class="st1"/>
+		<polygon id="polygon13" points="185.582,243.215 185.582,238.086 172.733,238.086 172.733,212.379 165.773,212.379 165.773,243.215 " class="st1"/>
+		<path id="path15" d="m 206.34,226.9 c 5.472,-0.502 6.659,-3.177 6.659,-7.036 0,-3.395 -1.44,-5.124 -3.014,-6.096 -1.321,-0.83 -2.884,-1.389 -6.16,-1.389 l -14.423,0 0,30.836 14.612,0 c 4.489,0 6.359,-0.88 7.227,-1.476 1.485,-0.994 3.413,-3.198 3.413,-6.703 0,-4.144 -1.439,-8.295 -8.314,-8.136 z m -3.692,11.833 -6.288,0 0,-0.027 0,-21.886 0,-0.02 6.851,0 c 2.318,0 3.764,1.842 3.764,4.358 0,3.869 -1.87,3.966 -7.206,4.158 0,0.573 0,2.712 0,3.572 4.766,-0.017 8.588,-0.302 8.588,4.635 -0.001,2.478 -1.586,5.21 -5.709,5.21 z" class="st1"/>
+	</g>
+	<g id="g17">
+		<path id="path19" d="m 100,100 0,100 144,0 0,-100 -144,0 z m 33.4,87.079 -16.414,0 0,-74.158 16.414,0 c 17.036,0 31.281,16.567 31.281,37.079 0,20.512 -14.244,37.079 -31.281,37.079 z m 93.614,0 -16.414,0 c -17.036,0 -31.282,-16.567 -31.282,-37.079 0,-20.512 14.245,-37.079 31.282,-37.079 l 16.414,0 0,74.158 z" class="st1"/>
+	</g>
+	</g>
+</svg>
+<h3>DITA + Markdown</h3>
+<h3>⬇︎ ⬇︎ ⬇︎</h3>
+<h3>PDF + HTML</h3>
+				<aside class="notes">
+					Single-sourcing >> Single-piping
+				</aside>
+			</section>
+
+<!--#########################################################################-->
+
+				<section><h1></h1>
+<svg id="mermaidChart223" xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 718.015625 390" style="max-width:718.015625px;font-size:0.5em; text-align:left;">
+	<style type="text/css" title="mermaid-svg-internal-css">
+		/*  */
+		#mermaidChart223 .node&gt;
+		rect {}
+		#mermaidChart223 .node text {
+			fill: #000;
+			stroke: none;
+			font-weight: 300;
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serf;
+			font-size: 14px;
+		}
+		#mermaidChart223 .edgeLabel text {
+			fill: #000;
+			stroke: none;
+			font-weight: 300;
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serf;
+			font-size: 14px;
+		}
+		#mermaidChart223 .cluster rect {
+			rx: 4px;
+			fill: rgb(255, 255, 222);
+			rx: 4px;
+			stroke: rgb(170, 170, 51);
+			stroke-width: 1px;
+		}
+		*,
+		::after,
+		::before {
+			box-sizing: border-box;
+		}
+		.mermaid .label {
+			color: rgb(51, 51, 51);
+		}
+		.node circle,
+		.node polygon,
+		.node rect {
+			fill: rgb(6, 141, 202);
+			stroke: rgb(68, 71, 149);
+			stroke-width: 1px;
+		}
+		.edgePath .path {
+			stroke: rgb(51, 51, 51);
+		}
+		.label {
+			color: black;
+		}
+		* {
+			box-sizing: border-box;
+		}
+		/*  */
+	</style>
+	<g>
+		<g class="output"><g class="clusters"/>
+			<g class="edgePaths">
+				<g class="edgePath" style="opacity: 1;"><path class="path" d="M113.40131578947368,67.5L155.6875,42.5L182.9140625,42.5" marker-end="url(#arrowhead1045)" style="stroke: #333; stroke-width: 3.5px;fill:none"/>
+					<defs>
+						<marker id="arrowhead1045" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker>
+					</defs>
+				</g>
+				<g class="edgePath" style="opacity: 1;"><path class="path" d="M113.40131578947368,112.5L155.6875,137.5L180.6875,137.5" marker-end="url(#arrowhead1046)" style="stroke: #333; stroke-width: 3.5px;fill:none"/>
+					<defs>
+						<marker id="arrowhead1046" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker>
+					</defs>
+				</g>
+				<g class="edgePath" style="opacity: 1;"><path class="path" d="M122.0078125,327.5L155.6875,327.5L186.1640625,327.5" marker-end="url(#arrowhead1047)" style="stroke: #333; stroke-width: 3.5px;fill:none"/>
+					<defs>
+						<marker id="arrowhead1047" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker>
+					</defs>
+				</g>
+				<g class="edgePath" style="opacity: 1;"><path class="path" d="M286.1015625,42.5L313.328125,42.5L372.1439144736842,162.5" marker-end="url(#arrowhead1048)" style="stroke: #333; stroke-width: 3.5px;fill:none"/>
+					<defs>
+						<marker id="arrowhead1048" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker>
+					</defs>
+				</g>
+				<g class="edgePath" style="opacity: 1;"><path class="path" d="M288.328125,137.5L313.328125,137.5L350.0879934210526,162.5" marker-end="url(#arrowhead1049)" style="stroke: #333; stroke-width: 3.5px;fill:none"/>
+					<defs>
+						<marker id="arrowhead1049" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker>
+					</defs>
+				</g>
+				<g class="edgePath" style="opacity: 1;"><path class="path" d="M283.7578125,232.5L313.328125,232.5L350.0879934210526,207.5" marker-end="url(#arrowhead1050)" style="stroke: #333; stroke-width: 3.5px;fill:none"/>
+					<defs>
+						<marker id="arrowhead1050" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker>
+					</defs>
+				</g>
+				<g class="edgePath" style="opacity: 1;"><path class="path" d="M282.8515625,327.5L313.328125,327.5L372.1439144736842,207.5" marker-end="url(#arrowhead1051)" style="stroke: #333; stroke-width: 3.5px;fill:none"/>
+					<defs>
+						<marker id="arrowhead1051" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker>
+					</defs>
+				</g>
+				<g class="edgePath" style="opacity: 1;"><path class="path" d="M428.015625,185L453.015625,185L478.015625,185" marker-end="url(#arrowhead1052)" style="stroke: #333; stroke-width: 3.5px;fill:none"/>
+					<defs>
+						<marker id="arrowhead1052" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker>
+					</defs>
+				</g>
+			</g>
+			<g class="edgeLabels">
+				<g class="edgeLabel" transform="" style="opacity: 1;">
+					<g transform="translate(0,0)" class="label">
+						<foreignObject width="0" height="0">
+							<div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">
+								<span class="edgeLabel"></span>
+							</div>
+						</foreignObject>
+					</g>
+				</g>
+				<g class="edgeLabel" transform="" style="opacity: 1;">
+					<g transform="translate(0,0)" class="label">
+						<foreignObject width="0" height="0">
+							<div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">
+								<span class="edgeLabel"></span>
+							</div>
+						</foreignObject>
+					</g>
+				</g>
+				<g class="edgeLabel" transform="" style="opacity: 1;">
+					<g transform="translate(0,0)" class="label">
+						<foreignObject width="0" height="0">
+							<div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">
+								<span class="edgeLabel"></span>
+							</div>
+						</foreignObject>
+					</g>
+				</g>
+				<g class="edgeLabel" transform="" style="opacity: 1;">
+					<g transform="translate(0,0)" class="label">
+						<foreignObject width="0" height="0">
+							<div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">
+								<span class="edgeLabel"></span>
+							</div>
+						</foreignObject>
+					</g>
+				</g>
+				<g class="edgeLabel" transform="" style="opacity: 1;">
+					<g transform="translate(0,0)" class="label">
+						<foreignObject width="0" height="0">
+							<div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">
+								<span class="edgeLabel"></span>
+							</div>
+						</foreignObject>
+					</g>
+				</g>
+				<g class="edgeLabel" transform="" style="opacity: 1;">
+					<g transform="translate(0,0)" class="label">
+						<foreignObject width="0" height="0">
+							<div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">
+								<span class="edgeLabel"></span>
+							</div>
+						</foreignObject>
+					</g>
+				</g>
+				<g class="edgeLabel" transform="" style="opacity: 1;">
+					<g transform="translate(0,0)" class="label">
+						<foreignObject width="0" height="0">
+							<div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">
+								<span class="edgeLabel"></span>
+							</div>
+						</foreignObject>
+					</g>
+				</g>
+				<g class="edgeLabel" transform="" style="opacity: 1;">
+					<g transform="translate(0,0)" class="label">
+						<foreignObject width="0" height="0">
+							<div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">
+								<span class="edgeLabel"></span>
+							</div>
+						</foreignObject>
+					</g>
+				</g>
+			</g>
+			<g class="nodes">
+				<g class="node" id="T1" transform="translate(75.34375,90)" style="opacity: 1;"><rect rx="5" ry="5" x="-55.34375" y="-22.5" width="110.6875" height="45" style="fill:transparent;stroke:#2d2d2d;stroke-width:4px;"/>
+					<g class="label" transform="translate(0,0)">
+						<g transform="translate(-45.34375,-12.5)">
+							<foreignObject width="90.6875" height="25">
+								<div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Text editor</div>
+							</foreignObject>
+						</g>
+					</g>
+				</g>
+				<g class="node" id="T2" transform="translate(75.34375,327.5)" style="opacity: 1;"><rect rx="5" ry="5" x="-46.6640625" y="-22.5" width="93.328125" height="45" style="fill:transparent;stroke:#2d2d2d;stroke-width:4px;"/>
+					<g class="label" transform="translate(0,0)">
+						<g transform="translate(-36.6640625,-12.5)">
+							<foreignObject width="73.328125" height="25">
+								<div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">MS Visio</div>
+							</foreignObject>
+						</g>
+					</g>
+				</g>
+				<g class="node" id="A1" transform="translate(234.5078125,42.5)" style="opacity: 1;"><rect rx="5" ry="5" x="-51.59375" y="-22.5" width="103.1875" height="45" style="fill:transparent;stroke:#2d2d2d;stroke-width:4px;"/>
+					<g class="label" transform="translate(0,0)">
+						<g transform="translate(-41.59375,-12.5)">
+							<foreignObject width="83.1875" height="25">
+								<div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">DITA XML</div>
+							</foreignObject>
+						</g>
+					</g>
+				</g>
+				<g class="node" id="A2" transform="translate(234.5078125,137.5)" style="opacity: 1;"><rect rx="5" ry="5" x="-53.8203125" y="-22.5" width="107.640625" height="45" style="fill:transparent;stroke:#2d2d2d;stroke-width:4px;"/>
+					<g class="label" transform="translate(0,0)">
+						<g transform="translate(-43.8203125,-12.5)">
+							<foreignObject width="87.640625" height="25">
+								<div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Markdown</div>
+							</foreignObject>
+						</g>
+					</g>
+				</g>
+				<g class="node" id="A3" transform="translate(234.5078125,232.5)" style="opacity: 1;"><rect rx="5" ry="5" x="-49.25" y="-22.5" width="98.5" height="45" style="fill:transparent;stroke:#2d2d2d;stroke-width:4px;stroke-dasharray: 5; 5;"/>
+					<g class="label" transform="translate(0,0)">
+						<g transform="translate(-39.25,-12.5)">
+							<foreignObject width="78.5" height="25">
+								<div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">PNG files</div>
+							</foreignObject>
+						</g>
+					</g>
+				</g>
+				<g class="node" id="A4" transform="translate(234.5078125,327.5)" style="opacity: 1;"><rect rx="5" ry="5" x="-48.34375" y="-22.5" width="96.6875" height="45" style="fill:transparent;stroke:#2d2d2d;stroke-width:4px;"/>
+					<g class="label" transform="translate(0,0)">
+						<g transform="translate(-38.34375,-12.5)">
+							<foreignObject width="76.6875" height="25">
+								<div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">SVG files</div>
+							</foreignObject>
+						</g>
+					</g>
+				</g>
+				<g class="node" id="B" transform="translate(383.171875,185)" style="opacity: 1;"><rect rx="5" ry="5" x="-44.84375" y="-22.5" width="89.6875" height="45" style="fill:transparent;stroke:#2d2d2d;stroke-width:4px;"/>
+					<g class="label" transform="translate(0,0)">
+						<g transform="translate(-34.84375,-12.5)">
+							<foreignObject width="69.6875" height="25">
+								<div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">DITA OT</div>
+							</foreignObject>
+						</g>
+					</g>
+				</g>
+				<g class="node" id="C1" transform="translate(578.015625,185)" style="opacity: 1;"><rect rx="5" ry="5" x="-100" y="-60" width="200" height="120" style="fill:transparent;stroke:#2d2d2d;stroke-width:4px;"/>
+					<g class="label" transform="translate(0,0)">
+						<g transform="translate(-90,-50)">
+							<foreignObject width="180" height="100">
+								<div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">- Live HTML<br/>- HTML for download<br/>- PDF<br/>- Embedded help</div>
+							</foreignObject>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+	<style type="text/css">
+		.label {
+			color: #000000 !important;
+		}
+	</style>
+</svg>
+					<aside class="notes">
+						Mapa del proceso, introduciendo Visio y los sitios donde viven las cosas.
+					</aside>
+				</section>
+
+<!--#########################################################################-->
+
+				<section>
+				<h1 style="position:absolute;top:27%;left:40%;font-size:7em;">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64" height="1em"><path fill="#ffdd67" d="M2,32c0,16.572,13.428,30,30,30s30-13.428,30-30S48.572,2,32,2S2,15.428,2,32z"/><g fill="#664e27"><path d="m15.318 52c1.801-1.061 3.541-1.701 5.322-2.127 1.775-.428 3.566-.609 5.361-.613 1.799.008 3.588.189 5.361.615 1.781.428 3.52 1.068 5.322 2.125-.771-1.979-2.484-3.533-4.396-4.527-1.932-1-4.119-1.486-6.287-1.484-2.166.004-4.354.486-6.283 1.488-1.909.996-3.624 2.548-4.4 4.523"/><circle cx="37.498" cy="36" r="4.5"/><circle cx="14.498" cy="36" r="4.5"/></g><g fill="#917524"><path d="m19.578 20.906c-3.236 2.732-7.523 3.881-11.693 3.133-.578-.113-1.088 2.02-.385 2.156 4.809.863 9.756-.461 13.492-3.615.541-.469-.971-2.06-1.414-1.674"/><path d="m44.11 23.887c-4.168.748-8.455-.4-11.691-3.133-.443-.389-1.955 1.205-1.412 1.674 3.732 3.152 8.68 4.479 13.492 3.615.703-.135.191-2.27-.389-2.156"/></g><path fill="#65b1ef" d="m44.688 38.605c0 8.576 11.656 8.578 11.654 0 0-6.264-5.826-12.375-5.826-12.375s-5.828 6.114-5.828 12.375"/></svg>
+				</h1>
+					<table style="line-height:7em;width:90%;font-weight:bold;">
+						<tbody>
+							<tr>
+								<td style="border-bottom:0">File management</td>
+								<td style="border-bottom:0"></td>
+								<td style="text-align:right; border-bottom:0;">Visual grammar</td>
+							</tr>
+							<tr>
+								<td style="border-bottom:0"></td>
+								<td style="border-bottom:0"></td>
+								<td style="border-bottom:0"></td>
+							</tr>
+							<tr>
+								<td>Reuse/Collaboration</td>
+								<td></td>
+								<td style="text-align:right; border-bottom:0;">Usability</td>
+							</tr>
+						</tbody>
+					</table>
+					<aside class="notes">
+						PAIN: source and production file management, reuse and collaboration, and design and visual grammar. Let's pick the first ones...
+					</aside>
+				</section>
+
+<!--#########################################################################-->
+
+				<section data-background-image="assets/files.jpg">
+					<!-- <h2 style="text-shadow: 0em 0em 0.2em #2d2d2d,0em 0.1em 0.1em #2d2d2d,0em -0.1em 0.1em #2d2d2d;color:#fff">local vs reusable</h2>
+					<br>
+					<h2 style="text-shadow: 0em 0em 0.2em #2d2d2d,0em 0.1em 0.1em #2d2d2d,0em -0.1em 0.1em #2d2d2d;color:#fff">categories</h2> -->
+					<aside class="notes">
+						File management: local vs reusable
+						Categorize, taxonomy (if CMS), file naming convention
+						Team support: 
+					</aside>
+				</section>
+
+<!--#########################################################################-->
+
+				<section data-background-image="assets/files_dim.jpg" data-transition="fade-in slide-out">
+					<table style="width:90%;text-shadow: 0em 0em 0.2em #2d2d2d,0em 0.1em 0.1em #2d2d2d,0em -0.1em 0.1em #2d2d2d;color:#fff;font-size:1.1em">
+						<tbody>
+							<tr>
+								<td style="border-bottom: 0; font-weight:bold;font-size:1.5em">Shared assets</td>
+								<td style="border-bottom:0"></td>
+								<td style="text-align:right; border-bottom: 0; font-weight:bold;font-size:1.5em">Local assets</td>
+							</tr>
+							<tr>
+								<td style="border-bottom:0">Curated</td>
+								<td style="border-bottom:0"></td>
+								<td style="text-align:right; border-bottom:0;">Ad hoc</td>
+							</tr>
+							<tr>
+								<td style="border-bottom:0">Team-owned</td>
+								<td style="border-bottom:0"></td>
+								<td style="text-align:right; border-bottom:0;">Writer-owned</td>
+							</tr>
+						</tbody>
+					</table>
+					<aside class="notes">
+						File management: local vs reusable
+						Categorize, taxonomy (if CMS), file naming convention
+						Team support: shared assets in a shared sync folder - dropbox, google drive, whatever (only some can write, all can read)
+					</aside>
+				</section>
+
+<!--#########################################################################-->
+
+				<section>
+					<br><object data="assets/stencils.svg" type="image/svg+xml" height="550em"></object>
+					<aside class="notes">
+						Visual grammar, hierarchy, functional colors, palette developed by UX, drag & drop, can be as single file in illustrator
+					</aside>
+				</section>
+
+<!--#########################################################################-->
+
+				<!-- <section><h1></h1>
+					<aside class="notes">
+						MERMAID.JS 
+					</aside>
+				</section> -->
+
+<!--#########################################################################-->
+
+				<!-- <section><h1></h1>
+					<aside class="notes">
+						INTERACTIVITY document.getElementById("ID").classList.toggle('class',  true|false);
+					</aside>
+				</section> -->
+
+<!--#########################################################################-->
+
+				<section>
+					<svg id="lovemoji" version="1.1" xml:space="preserve" style="" viewBox="-5 -5 55 55" height="12em">
+						<defs id="defs6"><clipPath clipPathUnits="userSpaceOnUse" id="clipPath16"><path d="M 0,36 36,36 36,0 0,0 0,36 Z" id="path18" class="PeVPEMiD_0"></path></clipPath></defs><g style="stroke:#000000;stroke-opacity:1;fill:none" transform="matrix(1.25,0,0,-1.25,45,22.5)" id="g20"><path id="path22" style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-opacity:1" d="m 0,0 c 0,-9.941 -8.059,-18 -18,-18 -9.941,0 -18,8.059 -18,18 0,2.7244272 0.605301,5.3074998 1.688754,7.6220688 m 12.106717,9.8842072 C -20.855658,17.829065 -19.447788,18 -18,18 c 1.370017,0 2.70429,-0.153064 3.98665,-0.443024 M -1.6015798,7.4329848 C -0.57288423,5.1671561 0,2.6504702 0,0" class="PeVPEMiD_1"></path></g><g style="stroke:#000000;stroke-opacity:1;fill:none" transform="matrix(1.25,0,0,-1.25,22.5,27.31075)" id="g24"><path id="path26" style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-opacity:1" d="m 0,0 c -2.966,0 -4.935,0.346 -7.369,0.819 -0.557,0.107 -1.638,0 -1.638,-1.637 0,-3.276 3.763,-7.37 9.007,-7.37 5.244,0 9.007,4.094 9.007,7.37 0,1.637 -1.082,1.745 -1.638,1.637 C 4.936,0.346 2.967,0 0,0" class="PeVPEMiD_2"></path></g><g style="fill:none;stroke:#000000;stroke-opacity:1" transform="matrix(1.25,0,0,-1.25,20.812375,4.101)" id="g28"><path id="path30" style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-opacity:1" d="m 0,0 c -0.859,2.431 -3.524,3.707 -5.956,2.85 -1.476,-0.521 -2.521,-1.711 -2.928,-3.105 -1.191,0.83 -2.751,1.1 -4.224,0.581 -2.431,-0.858 -3.708,-3.525 -2.85,-5.956 0.122,-0.345 0.284,-0.663 0.472,-0.958 1.951,-3.582 7.588,-6.1 11.002,-6.131 2.636,2.167 5.446,7.664 4.717,11.677 C 0.195,-0.694 0.12,-0.344 0,0" class="PeVPEMiD_3"></path></g><g style="stroke:#000000;stroke-opacity:1;fill:none" transform="matrix(1.25,0,0,-1.25,24.187,4.101)" id="g32"><path id="path34" style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-opacity:1" d="m 0,0 c 0.859,2.431 3.525,3.707 5.956,2.85 1.477,-0.521 2.521,-1.711 2.929,-3.105 1.191,0.83 2.751,1.1 4.224,0.581 2.43,-0.858 3.707,-3.525 2.85,-5.956 -0.123,-0.345 -0.284,-0.663 -0.473,-0.958 -1.951,-3.582 -7.588,-6.1 -11.002,-6.131 -2.636,2.167 -5.445,7.664 -4.716,11.677 C -0.194,-0.694 -0.119,-0.344 0,0" class="PeVPEMiD_4"></path></g><style data-made-with="vivus-instant">.PeVPEMiD_0{stroke-dasharray:144 146;stroke-dashoffset:145;animation:PeVPEMiD_draw_0 4500ms ease-in-out 0ms infinite,PeVPEMiD_fade 4500ms linear 0ms infinite;}.PeVPEMiD_1{stroke-dasharray:81 83;stroke-dashoffset:82;animation:PeVPEMiD_draw_1 4500ms ease-in-out 0ms infinite,PeVPEMiD_fade 4500ms linear 0ms infinite;}.PeVPEMiD_2{stroke-dasharray:46 48;stroke-dashoffset:47;animation:PeVPEMiD_draw_2 4500ms ease-in-out 0ms infinite,PeVPEMiD_fade 4500ms linear 0ms infinite;}.PeVPEMiD_3{stroke-dasharray:52 54;stroke-dashoffset:53;animation:PeVPEMiD_draw_3 4500ms ease-in-out 0ms infinite,PeVPEMiD_fade 4500ms linear 0ms infinite;}.PeVPEMiD_4{stroke-dasharray:52 54;stroke-dashoffset:53;animation:PeVPEMiD_draw_4 4500ms ease-in-out 0ms infinite,PeVPEMiD_fade 4500ms linear 0ms infinite;}@keyframes PeVPEMiD_draw{100%{stroke-dashoffset:0;}}@keyframes PeVPEMiD_fade{0%{stroke-opacity:1;}86.66666666666667%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes PeVPEMiD_draw_0{2.2222222222222223%{stroke-dashoffset: 145}46.666666666666664%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes PeVPEMiD_draw_1{7.777777777777778%{stroke-dashoffset: 82}52.22222222222223%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes PeVPEMiD_draw_2{13.333333333333334%{stroke-dashoffset: 47}57.77777777777777%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes PeVPEMiD_draw_3{18.88888888888889%{stroke-dashoffset: 53}63.33333333333333%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes PeVPEMiD_draw_4{24.444444444444443%{stroke-dashoffset: 53}68.88888888888889%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style>
+					</svg>
+					<h3>Stroke animation: <a href="https://maxwellito.github.io/vivus-instant/">Vivus</a></h3>
+					<aside class="notes">
+						Summary: why SVG
+						- resolution independent & responsive
+						- we can style it 
+						- we can interact with it 
+					</aside>
+				</section>
+
+<!--#########################################################################-->
+
+				<section>
+					
+					<h3>SVG generation from text: <a href="https://maxwellito.github.io/vivus-instant/">mermaid.js</a></h3>
+					<aside class="notes">
+						Great for prototyping, notes, and small projects
+					</aside>
+				</section>
+
+<!--#########################################################################-->
+
+				<section>
+					<h1 style="font-size:7em">L10n</h1>
+					<h3 style="color:rgba(45, 45, 45, 0.5); margin:-0.75em;">Localisation</h3>
+					<aside class="notes">
+						L10n
+					</aside>
+				</section>
+
+<!--#########################################################################-->
+
+				<section data-transition="slide-in fade-out">
+					<table style="line-height:7em;width:90%;font-weight:bold;">
+						<tbody>
+							<tr>
+								<td style="border-bottom:0">
+						<object data="assets/BLT_1_words.svg" type="image/svg+xml" height="400em"/></td>
+							</tr>
+						</tbody>
+					</table>
+					<aside class="notes">
+						Getting rid of text callouts
+					</aside>
+				</section>
+
+<!--#########################################################################-->
+
+				<section data-transition="fade">
+					<table style="line-height:7em;width:90%;font-weight:bold;">
+						<tbody>
+							<tr>
+								<td style="border-bottom:0">
+									<object data="assets/BLT_1_dots.svg" type="image/svg+xml" height="400em"/>
+								</td>
+							<td style="border-bottom:0;line-height:2em;vertical-align:top;">
+								<br>
+								<ol>
+									<li>Bacon</li>
+									<li>Lettuce</li>
+									<li>Tomato</li>
+								</ol>
+							</td>
+							</tr>
+						</tbody>
+					</table>
+					<aside class="notes">
+						Getting rid of text callouts
+					</aside>
+				</section>
+
+<!--#########################################################################-->
+
+				<section data-transition="fade-in slide-out">
+					<table style="line-height:7em;width:90%;font-weight:bold;">
+						<tbody>
+							<tr>
+								<td style="border-bottom:0">
+									<object data="assets/BLT_1_raster.svg" type="image/svg+xml" height="400em"/>
+								</td>
+							<td style="border-bottom:0;line-height:2em;vertical-align:top;">
+								<br>
+								<ol>
+									<li>Bacon</li>
+									<li>Lettuce</li>
+									<li>Tomato</li>
+								</ol>
+							</td>
+							</tr>
+						</tbody>
+					</table>
+					<aside class="notes">
+						Getting rid of text callouts
+					</aside>
+				</section>
+
+<!--#########################################################################-->
+
+				<section><h1></h1>
+<svg
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1"
+  viewBox="0 0 464.484375 346"
+  style="max-width: 464.484375px;"
+  width="100%"
+  id="mermaid-1527054194015">
+  <metadata id="metadata139">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs id="defs137"/>
+  <style id="style3">
+
+    #mermaid-1527054194015 .label {
+      font-family: 'trebuchet ms', verdana, arial;
+      color: #333;
+    }
+
+    #mermaid-1527054194015 .node circle,
+    #mermaid-1527054194015 .node ellipse,
+    #mermaid-1527054194015 .node polygon,
+    #mermaid-1527054194015 .node rect {
+      fill: #ECECFF;
+      stroke: #9370DB;
+      stroke-width: 1px;
+    }
+
+    #mermaid-1527054194015 .node.clickable {
+      cursor: pointer;
+    }
+
+    #mermaid-1527054194015 .arrowheadPath {
+      fill: #333333;
+    }
+
+    #mermaid-1527054194015 .edgePath .path {
+      stroke: #333333;
+      stroke-width: 1.5px;
+    }
+
+    #mermaid-1527054194015 .edgeLabel {
+      background-color: #e8e8e8;
+    }
+
+    #mermaid-1527054194015 .cluster rect {
+      fill: #ffffde !important;
+      stroke: #aaaa33 !important;
+      stroke-width: 1px !important;
+    }
+
+    #mermaid-1527054194015 .cluster text {
+      fill: #333;
+    }
+
+    #mermaid-1527054194015 div.mermaidTooltip {
+      position: absolute;
+      text-align: center;
+      max-width: 200px;
+      padding: 2px;
+      font-family: 'trebuchet ms', verdana, arial;
+      font-size: 12px;
+      background: #ffffde;
+      border: 1px solid #aaaa33;
+      border-radius: 2px;
+      pointer-events: none;
+      z-index: 100;
+    }
+
+    #mermaid-1527054194015 .actor {
+      stroke: #CCCCFF;
+      fill: #ECECFF;
+    }
+
+    #mermaid-1527054194015 text.actor {
+      fill: black;
+      stroke: none;
+    }
+
+    #mermaid-1527054194015 .actor-line {
+      stroke: grey;
+    }
+
+    #mermaid-1527054194015 .messageLine0 {
+      stroke-width: 1.5;
+      stroke-dasharray: '2 2';
+      marker-end: 'url(#arrowhead)';
+      stroke: #333;
+    }
+
+    #mermaid-1527054194015 .messageLine1 {
+      stroke-width: 1.5;
+      stroke-dasharray: '2 2';
+      stroke: #333;
+    }
+
+    #mermaid-1527054194015 #arrowhead {
+      fill: #333;
+    }
+
+    #mermaid-1527054194015 #crosshead path {
+      fill: #333 !important;
+      stroke: #333 !important;
+    }
+
+    #mermaid-1527054194015 .messageText {
+      fill: #333;
+      stroke: none;
+    }
+
+    #mermaid-1527054194015 .labelBox {
+      stroke: #CCCCFF;
+      fill: #ECECFF;
+    }
+
+    #mermaid-1527054194015 .labelText {
+      fill: black;
+      stroke: none;
+    }
+
+    #mermaid-1527054194015 .loopText {
+      fill: black;
+      stroke: none;
+    }
+
+    #mermaid-1527054194015 .loopLine {
+      stroke-width: 2;
+      stroke-dasharray: '2 2';
+      marker-end: 'url(#arrowhead)';
+      stroke: #CCCCFF;
+    }
+
+    #mermaid-1527054194015 .note {
+      stroke: #aaaa33;
+      fill: #fff5ad;
+    }
+
+    #mermaid-1527054194015 .noteText {
+      fill: black;
+      stroke: none;
+      font-family: 'trebuchet ms', verdana, arial;
+      font-size: 14px;
+    }
+
+    #mermaid-1527054194015 .section {
+      stroke: none;
+      opacity: 0.2;
+    }
+
+    #mermaid-1527054194015 .section0 {
+      fill: rgba(102, 102, 255, 0.49);
+    }
+
+    #mermaid-1527054194015 .section2 {
+      fill: #fff400;
+    }
+
+    #mermaid-1527054194015 .section1,
+    #mermaid-1527054194015 .section3 {
+      fill: white;
+      opacity: 0.2;
+    }
+
+    #mermaid-1527054194015 .sectionTitle0 {
+      fill: #333;
+    }
+
+    #mermaid-1527054194015 .sectionTitle1 {
+      fill: #333;
+    }
+
+    #mermaid-1527054194015 .sectionTitle2 {
+      fill: #333;
+    }
+
+    #mermaid-1527054194015 .sectionTitle3 {
+      fill: #333;
+    }
+
+    #mermaid-1527054194015 .sectionTitle {
+      text-anchor: start;
+      font-size: 11px;
+      text-height: 14px;
+    }
+
+    #mermaid-1527054194015 .grid .tick {
+      stroke: lightgrey;
+      opacity: 0.3;
+      shape-rendering: crispEdges;
+    }
+
+    #mermaid-1527054194015 .grid path {
+      stroke-width: 0;
+    }
+
+    #mermaid-1527054194015 .today {
+      fill: none;
+      stroke: red;
+      stroke-width: 2px;
+    }
+
+    #mermaid-1527054194015 .task {
+      stroke-width: 2;
+    }
+
+    #mermaid-1527054194015 .taskText {
+      text-anchor: middle;
+      font-size: 11px;
+    }
+
+    #mermaid-1527054194015 .taskTextOutsideRight {
+      fill: black;
+      text-anchor: start;
+      font-size: 11px;
+    }
+
+    #mermaid-1527054194015 .taskTextOutsideLeft {
+      fill: black;
+      text-anchor: end;
+      font-size: 11px;
+    }
+
+    #mermaid-1527054194015 .taskText0,
+    #mermaid-1527054194015 .taskText1,
+    #mermaid-1527054194015 .taskText2,
+    #mermaid-1527054194015 .taskText3 {
+      fill: white;
+    }
+
+    #mermaid-1527054194015 .task0,
+    #mermaid-1527054194015 .task1,
+    #mermaid-1527054194015 .task2,
+    #mermaid-1527054194015 .task3 {
+      fill: #8a90dd;
+      stroke: #534fbc;
+    }
+
+    #mermaid-1527054194015 .taskTextOutside0,
+    #mermaid-1527054194015 .taskTextOutside2 {
+      fill: black;
+    }
+
+    #mermaid-1527054194015 .taskTextOutside1,
+    #mermaid-1527054194015 .taskTextOutside3 {
+      fill: black;
+    }
+
+    #mermaid-1527054194015 .active0,
+    #mermaid-1527054194015 .active1,
+    #mermaid-1527054194015 .active2,
+    #mermaid-1527054194015 .active3 {
+      fill: #bfc7ff;
+      stroke: #534fbc;
+    }
+
+    #mermaid-1527054194015 .activeText0,
+    #mermaid-1527054194015 .activeText1,
+    #mermaid-1527054194015 .activeText2,
+    #mermaid-1527054194015 .activeText3 {
+      fill: black !important;
+    }
+
+    #mermaid-1527054194015 .done0,
+    #mermaid-1527054194015 .done1,
+    #mermaid-1527054194015 .done2,
+    #mermaid-1527054194015 .done3 {
+      stroke: grey;
+      fill: lightgrey;
+      stroke-width: 2;
+    }
+
+    #mermaid-1527054194015 .doneText0,
+    #mermaid-1527054194015 .doneText1,
+    #mermaid-1527054194015 .doneText2,
+    #mermaid-1527054194015 .doneText3 {
+      fill: black !important;
+    }
+
+    #mermaid-1527054194015 .crit0,
+    #mermaid-1527054194015 .crit1,
+    #mermaid-1527054194015 .crit2,
+    #mermaid-1527054194015 .crit3 {
+      stroke: #ff8888;
+      fill: red;
+      stroke-width: 2;
+    }
+
+    #mermaid-1527054194015 .activeCrit0,
+    #mermaid-1527054194015 .activeCrit1,
+    #mermaid-1527054194015 .activeCrit2,
+    #mermaid-1527054194015 .activeCrit3 {
+      stroke: #ff8888;
+      fill: #bfc7ff;
+      stroke-width: 2;
+    }
+
+    #mermaid-1527054194015 .doneCrit0,
+    #mermaid-1527054194015 .doneCrit1,
+    #mermaid-1527054194015 .doneCrit2,
+    #mermaid-1527054194015 .doneCrit3 {
+      stroke: #ff8888;
+      fill: lightgrey;
+      stroke-width: 2;
+      cursor: pointer;
+      shape-rendering: crispEdges;
+    }
+
+    #mermaid-1527054194015 .doneCritText0,
+    #mermaid-1527054194015 .doneCritText1,
+    #mermaid-1527054194015 .doneCritText2,
+    #mermaid-1527054194015 .doneCritText3 {
+      fill: black !important;
+    }
+
+    #mermaid-1527054194015 .activeCritText0,
+    #mermaid-1527054194015 .activeCritText1,
+    #mermaid-1527054194015 .activeCritText2,
+    #mermaid-1527054194015 .activeCritText3 {
+      fill: black !important;
+    }
+
+    #mermaid-1527054194015 .titleText {
+      text-anchor: middle;
+      font-size: 18px;
+      fill: black;
+    }
+
+    #mermaid-1527054194015 g.classGroup text {
+      fill: #9370DB;
+      stroke: none;
+      font-family: 'trebuchet ms', verdana, arial;
+      font-size: 10px;
+    }
+
+    #mermaid-1527054194015 g.classGroup rect {
+      fill: #ECECFF;
+      stroke: #9370DB;
+    }
+
+    #mermaid-1527054194015 g.classGroup line {
+      stroke: #9370DB;
+      stroke-width: 1;
+    }
+
+    #mermaid-1527054194015 .classLabel .box {
+      stroke: none;
+      stroke-width: 0;
+      fill: #ECECFF;
+      opacity: 0.5;
+    }
+
+    #mermaid-1527054194015 .classLabel .label {
+      fill: #9370DB;
+      font-size: 10px;
+    }
+
+    #mermaid-1527054194015 .relation {
+      stroke: #9370DB;
+      stroke-width: 1;
+      fill: none;
+    }
+
+    #mermaid-1527054194015 #compositionStart {
+      fill: #9370DB;
+      stroke: #9370DB;
+      stroke-width: 1;
+    }
+
+    #mermaid-1527054194015 #compositionEnd {
+      fill: #9370DB;
+      stroke: #9370DB;
+      stroke-width: 1;
+    }
+
+    #mermaid-1527054194015 #aggregationStart {
+      fill: #ECECFF;
+      stroke: #9370DB;
+      stroke-width: 1;
+    }
+
+    #mermaid-1527054194015 #aggregationEnd {
+      fill: #ECECFF;
+      stroke: #9370DB;
+      stroke-width: 1;
+    }
+
+    #mermaid-1527054194015 #dependencyStart {
+      fill: #9370DB;
+      stroke: #9370DB;
+      stroke-width: 1;
+    }
+
+    #mermaid-1527054194015 #dependencyEnd {
+      fill: #9370DB;
+      stroke: #9370DB;
+      stroke-width: 1;
+    }
+
+    #mermaid-1527054194015 #extensionStart {
+      fill: #9370DB;
+      stroke: #9370DB;
+      stroke-width: 1;
+    }
+
+    #mermaid-1527054194015 #extensionEnd {
+      fill: #9370DB;
+      stroke: #9370DB;
+      stroke-width: 1;
+    }
+
+    #mermaid-1527054194015 .branch-label,
+    #mermaid-1527054194015 .commit-id,
+    #mermaid-1527054194015 .commit-msg {
+      fill: lightgrey;
+      color: lightgrey;
+    }
+  </style>
+  <style id="style5">
+    #mermaid-1527054194015 {
+      color: rgb(157, 165, 180);
+      font: normal normal normal normal 18px / 25.7143px system-ui;
+    }
+  </style>
+  <g transform="translate(-12,-12)" id="g11" class="clusters"/>
+  <g transform="translate(-30,-12)" class="edgePath" style="opacity:1" id="g15">
+    <path class="path" d="m 154.42187,42.5 7,0 45.35362,25" style="fill:none;stroke:#333333;stroke-width:3.5px;marker-end:url(#arrowhead463)" id="path17"/>
+    <defs id="defs19">
+      <marker id="arrowhead463" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto">
+        <path d="M 0,0 10,5 0,10 Z" class="arrowheadPath" style="stroke-width:1;stroke-dasharray:1, 0" id="path22"/>
+      </marker>
+    </defs>
+  </g>
+  <g transform="translate(-30,-12)" class="edgePath" style="opacity:1" id="g24">
+    <path class="path" d="m 151.5625,137.5 9.85937,0 45.35362,-25" style="fill:none;stroke:#333333;stroke-width:3.5px;marker-end:url(#arrowhead464)" id="path26"/>
+    <defs id="defs28">
+      <marker id="arrowhead464" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto">
+        <path d="M 0,0 10,5 0,10 Z" class="arrowheadPath" style="stroke-width:1;stroke-dasharray:1, 0" id="path31"/>
+      </marker>
+    </defs>
+  </g>
+  <g transform="matrix(-1,0,0,1,328.54428,56)" class="edgePath" style="opacity:1" id="g33">
+    <path class="path" d="m 153.92969,232.5 7.49218,0 45.35362,25" style="fill:none;stroke:#333333;stroke-width:3.5px;marker-end:url(#arrowhead465)" id="path35"/>
+    <defs id="defs37">
+      <marker id="arrowhead465" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto">
+        <path d="M 0,0 10,5 0,10 Z" class="arrowheadPath" style="stroke-width:1;stroke-dasharray:1, 0" id="path40"/>
+      </marker>
+    </defs>
+  </g>
+  <g transform="matrix(-1,0,0,1,329.6849,-58)" class="edgePath" style="opacity:1" id="g42">
+    <path class="path" d="m 155.07031,307.5 6.35156,0 45.35362,-25" style="fill:none;stroke:#333333;stroke-width:3.5px;marker-end:url(#arrowhead466)" id="path44"/>
+    <defs id="defs46">
+      <marker id="arrowhead466" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto">
+        <path d="M 0,0 10,5 0,10 Z" class="arrowheadPath" style="stroke-width:1;stroke-dasharray:1, 0" id="path49"/>
+      </marker>
+    </defs>
+  </g>
+  <g transform="translate(-12,-12)" id="g60" class="edgeLabels">
+    <g id="g62" style="opacity:1" class="edgeLabel">
+      <g id="g64" class="label" style="color:#000000">
+        <foreignObject height="0" width="0">
+          <xhtml:div style="display: inline-block; white-space: nowrap;">
+            <xhtml:span class="edgeLabel"/>
+          </xhtml:div>
+        </foreignObject>
+      </g>
+    </g>
+    <g id="g66" style="opacity:1" class="edgeLabel">
+      <g id="g68" class="label" style="color:#000000">
+        <foreignObject height="0" width="0">
+          <xhtml:div style="display: inline-block; white-space: nowrap;">
+            <xhtml:span class="edgeLabel"/>
+          </xhtml:div>
+        </foreignObject>
+      </g>
+    </g>
+    <g id="g70" style="opacity:1" class="edgeLabel">
+      <g id="g72" class="label" style="color:#000000">
+        <foreignObject height="0" width="0">
+          <xhtml:div style="display: inline-block; white-space: nowrap;">
+            <xhtml:span class="edgeLabel"/>
+          </xhtml:div>
+        </foreignObject>
+      </g>
+    </g>
+    <g id="g74" style="opacity:1" class="edgeLabel">
+      <g id="g76" class="label" style="color:#000000">
+        <foreignObject height="0" width="0">
+          <xhtml:div style="display: inline-block; white-space: nowrap;">
+            <xhtml:span class="edgeLabel"/>
+          </xhtml:div>
+        </foreignObject>
+      </g>
+    </g>
+    <g id="g78" style="opacity:1" class="edgeLabel">
+      <g id="g80" class="label" style="color:#000000">
+        <foreignObject height="0" width="0">
+          <xhtml:div style="display: inline-block; white-space: nowrap;">
+            <xhtml:span class="edgeLabel"/>
+          </xhtml:div>
+        </foreignObject>
+      </g>
+    </g>
+  </g>
+  <g class="node" id="S1" transform="translate(66.210937,30.5)" style="opacity:1;fill:none">
+    <rect rx="5" ry="5" x="-58.210938" y="-22.5" width="116.42188" height="45" style="stroke:#2d2d2d;stroke-width:4px;fill:none" id="rect85"/>
+    <g style="color:#000000;fill:none" class="label" id="g87">
+      <g style="fill:none" transform="translate(-48.210937,-12.5)" id="g89">
+        <foreignObject width="96.421875" height="25">
+          <xhtml:div style="display: inline-block; white-space: nowrap;">DITA</xhtml:div>
+        </foreignObject>
+      </g>
+    </g>
+  </g>
+  <g class="node" id="S2" transform="translate(66.210937,125.5)" style="opacity:1;fill:none">
+    <rect rx="5" ry="5" x="-55.351562" y="-22.5" width="110.70312" height="45" style="stroke:#2d2d2d;stroke-width:4px;fill:none" id="rect92"/>
+    <g style="color:#000000;fill:none" class="label" id="g94">
+      <g style="fill:none" transform="translate(-45.351562,-12.5)" id="g96">
+        <foreignObject width="90.703125" height="25">
+          <xhtml:div style="display: inline-block; white-space: nowrap;">SVG</xhtml:div>
+        </foreignObject>
+      </g>
+    </g>
+  </g>
+  <g class="node" id="S3" transform="translate(235.59375,78)" style="opacity:1;fill:none">
+    <rect rx="5" ry="5" x="-61.171875" y="-22.5" width="122.34375" height="45" style="stroke:#2d2d2d;stroke-width:4px;fill:none" id="rect99"/>
+    <g style="color:#000000;fill:none" class="label" id="g101">
+      <g style="fill:none" transform="translate(-51.171875,-12.5)" id="g103">
+        <foreignObject width="102.34375" height="25">
+          <xhtml:div style="display: inline-block; white-space: nowrap;">XLIFF</xhtml:div>
+        </foreignObject>
+      </g>
+    </g>
+  </g>
+  <g class="node" id="T1" transform="translate(66.210937,220.5)" style="opacity:1;fill:none">
+    <rect rx="5" ry="5" x="-57.71875" y="-22.5" width="115.4375" height="45" style="stroke:#2d2d2d;stroke-width:4px;fill:none;stroke-dasharray: 5, 5;" id="rect106"/>
+    <g style="color:#000000;fill:none" class="label" id="g108">
+      <g style="fill:none" transform="translate(-47.71875,-12.5)" id="g110">
+        <foreignObject width="95.4375" height="25">
+          <xhtml:div style="display: inline-block; white-space: nowrap;">DITA</xhtml:div>
+        </foreignObject>
+      </g>
+    </g>
+  </g>
+  <g class="node" id="T2" transform="translate(66.210937,315.5)" style="opacity:1;fill:none">
+    <rect rx="5" ry="5" x="-54.859375" y="-22.5" width="109.71875" height="45" style="stroke:#2d2d2d;stroke-width:4px;fill:none;stroke-dasharray: 5, 5;" id="rect113"/>
+    <g style="color:#000000;fill:none" class="label" id="g115">
+      <g style="fill:none" transform="translate(-44.859375,-12.5)" id="g117">
+        <foreignObject width="89.71875" height="25">
+          <xhtml:div style="display: inline-block; white-space: nowrap;">SVG</xhtml:div>
+        </foreignObject>
+      </g>
+    </g>
+  </g>
+  <g class="node" id="T3" transform="translate(235.10156,268)" style="opacity:1;fill:none">
+    <rect rx="5" ry="5" x="-60.679688" y="-22.5" width="121.35938" height="45" style="fill:none;stroke:#2d2d2d;stroke-width:4px;stroke-dasharray: 5, 5;" id="rect120"/>
+    <g style="color:#000000;fill:none" class="label" id="g122">
+      <g style="fill:none" transform="translate(-50.679687,-12.5)" id="g124">
+        <foreignObject width="101.359375" height="25">
+          <xhtml:div style="display: inline-block; white-space: nowrap;">XLIFF</xhtml:div>
+        </foreignObject>
+      </g>
+    </g>
+  </g>
+  <style id="style133" type="text/css">
+    .label {
+      color: #000000 !important;
+    }
+  </style>
+  <path
+    d="m 382.96172,190.85982 -12.30202,-12.1567 0.1453,-0.1453 c 8.42737,-9.39602 14.43306,-20.1966 17.96868,-31.62681 l 14.19091,0 0,-9.71084 -33.90317,0 0,-9.68662 -9.68663,0 0,9.68662 -33.90317,0 0,9.63819 54.09978,0 c -3.26924,9.34759 -8.37893,18.21084 -15.3533,25.96014 -4.50428,-5.01282 -8.23363,-10.46156 -11.18804,-16.22509 l -9.68662,0 c 3.53561,7.8946 8.37892,15.35329 14.43305,22.08549 l -24.62822,24.33763 6.85329,6.85328 24.21654,-24.21654 15.06269,15.0627 3.68093,-9.85615 z m 27.26782,-24.57979 -9.68661,0 -21.7949,58.11972 9.68662,0 5.44872,-14.52994 23.00573,0 5.44872,14.52994 9.68663,0 -21.79491,-58.11972 z m -12.71369,33.90317 7.87039,-20.99574 7.87038,20.99574 -15.74077,0 z"
+    id="path4505"/>
+  <g id="g4514" style="opacity:1" class="edgePath" transform="translate(152.20032,33.55008)">
+    <path id="path4516" style="fill:none;stroke:#333333;stroke-width:3.5px;marker-end:url(#arrowhead463)" d="m 144.42187,42.5 17,0 45.35362,25" class="path"/>
+    <defs id="defs4518">
+      <marker orient="auto" markerHeight="6" markerWidth="8" markerUnits="strokeWidth" refY="5" refX="9" viewBox="0 0 10 10" id="marker4520">
+        <path id="path4522" style="stroke-width:1;stroke-dasharray:1, 0" class="arrowheadPath" d="M 0,0 10,5 0,10 Z"/>
+      </marker>
+    </defs>
+  </g>
+  <g transform="matrix(-0.8660254,0.5,-0.5,-0.8660254,510.72867,220.62975)" class="edgePath" style="opacity:1" id="g4546">
+    <path class="path" d="m 144.42187,42.5 17,0 45.35362,25" style="fill:none;stroke:#333333;stroke-width:3.5px;marker-end:url(#arrowhead463)" id="path4548"/>
+    <defs id="defs4550">
+      <marker id="marker4552" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto">
+        <path d="M 0,0 10,5 0,10 Z" class="arrowheadPath" style="stroke-width:1;stroke-dasharray:1, 0" id="path4554"/>
+      </marker>
+    </defs>
+  </g>
+</svg>
+					<aside class="notes">
+						XLIFF
+					</aside>
+				</section>
+
+<!--#########################################################################-->
+
+				<section data-transition="slide-in fade-out">
+					<img src="assets/l10n_anchor1.png"/>
+					<aside class="notes">
+						text-anchor:middle
+					</aside>
+				</section>
+
+<!--#########################################################################-->
+
+				<section data-transition="fade">
+					<img src="assets/l10n_anchor2.png"/>
+					<aside class="notes">
+						text-anchor:middle
+					</aside>
+				</section>
+
+<!--#########################################################################-->
+
+				<section data-transition="fade">
+					<img src="assets/l10n_anchor3.png"/>
+<pre style="font-size: 1em;"><code class="xml" data-trim contenteditable style="word-wrap:break-word;">text-anchor:start</code></pre>
+					<aside class="notes">
+						text-anchor:middle
+					</aside>
+				</section>
+
+<!--#########################################################################-->
+
+				<section data-transition="fade">
+					<img src="assets/l10n_anchor4.png"/>
+<pre style="font-size: 1em;"><code class="xml" data-trim contenteditable style="word-wrap:break-word;">text-anchor:start >> text-anchor:middle</code></pre>
+					<aside class="notes">
+						text-anchor:middle
+					</aside>
+				</section>
+
+<!--#########################################################################-->
+
+				<section data-transition="fade-in slide-out">
+					<img src="assets/l10n_anchor5.png"/>
+<br><br>Try it: <a href="https://gist.github.com/db4rr/f3f88aa6cd5c4ffd84c2c0344b9a7dd2">l1on_text-anchor_fix.xsl</a>
+					<aside class="notes">
+						text-anchor:middle
+					</aside>
+				</section>
+
+<!--#########################################################################-->
+
+				<section>
+					<pre style="vertical-align: middle; font-size: 0.75em; font-weight:bold;"><code class="C">
+  _____          _          _              _        
+ |  __ \        (_)        | |            (_)       
+ | |  | |  ____  _    ___  | | __  _   _   _    ___ 
+ | |  | | |_  / | |  / _ \ | |/ / | | | | | |  / _ \
+ | |__| |  / /  | | |  __/ |   <  | |_| | | | |  __/
+ |_____/  /___| |_|  \_, | |_|\_\  \__,_| | |  \_, |
+                       |/                _/ |    |/ 
+                                        |__/        
+
+
+</code></pre>
+<small><a href="http://db4rr.github.io/">db4rr.github.io</a> | <a href="https://revealjs.com">reveal.js</a> | <a href="https://mermaidjs.github.io/">mermaid.js</a> | <a href="https://maxwellito.github.io/vivus-instant/">vivus</a></small><br>
+<small>Picture credits: <a href="https://unsplash.com/photos/GJCWj-n3h4E">Sanwal Deen</a> | <a href="https://thenounproject.com">The Noun Project</a> | <a href="https://www.cookscountry.com/">Cook's Country</a></small>
+				</section>
+
+<!--#########################################################################-->
+<!--#########################################################################-->
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+
+				history: true,
+				// autoSlide: 20000,
+				controls: false,
+				//parallaxBackgroundImage: '../assets/background.png',
+				//parallaxBackgroundSize: '2208px 1242px',
+				//parallaxBackgroundHorizontal: 20,
+
+				multiplex: {
+        		// Example values. To generate your own, see the socket.io server instructions.
+        		secret: 'null', // null so the clients do not have control of the master presentation
+        		id: 'c029950e8b999fb7', // id, obtained from socket.io server
+        		url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
+    			},
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					//{ src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
+        			//{ src: 'plugin/multiplex/client.js', async: true }
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
+      	  { src: 'plugin/multiplex/client.js', async: true },
+				]
+			});
+
+			Reveal.addEventListener( 'DBF', function() {
+				document.getElementById("DBF_dotgrid_isolated").classList.add('start');
+				console.log( 'DBF called!' );
+			});
+
+		</script>
+
+	</body>
+</html>
