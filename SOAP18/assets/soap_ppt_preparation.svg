@@ -1,0 +1,350 @@
+<svg id="mermaid-1527158664234" width="100%" xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 852 244"><style>
+
+
+#mermaid-1527158664234 .label {
+  font-family: 'trebuchet ms', verdana, arial;
+  color: #333; }
+
+#mermaid-1527158664234 .node rect,
+#mermaid-1527158664234 .node circle,
+#mermaid-1527158664234 .node ellipse,
+#mermaid-1527158664234 .node polygon {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1px; }
+
+#mermaid-1527158664234 .node.clickable {
+  cursor: pointer; }
+
+#mermaid-1527158664234 .arrowheadPath {
+  fill: #333333; }
+
+#mermaid-1527158664234 .edgePath .path {
+  stroke: #333333;
+  stroke-width: 1.5px; }
+
+#mermaid-1527158664234 .edgeLabel {
+  background-color: #e8e8e8; }
+
+#mermaid-1527158664234 .cluster rect {
+  fill: #ffffde !important;
+  stroke: #aaaa33 !important;
+  stroke-width: 1px !important; }
+
+#mermaid-1527158664234 .cluster text {
+  fill: #333; }
+
+#mermaid-1527158664234 div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 200px;
+  padding: 2px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 12px;
+  background: #ffffde;
+  border: 1px solid #aaaa33;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 100; }
+
+#mermaid-1527158664234 .actor {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1527158664234 text.actor {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1527158664234 .actor-line {
+  stroke: grey; }
+
+#mermaid-1527158664234 .messageLine0 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  marker-end: 'url(#arrowhead)';
+  stroke: #333; }
+
+#mermaid-1527158664234 .messageLine1 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1527158664234 #arrowhead {
+  fill: #333; }
+
+#mermaid-1527158664234 #crosshead path {
+  fill: #333 !important;
+  stroke: #333 !important; }
+
+#mermaid-1527158664234 .messageText {
+  fill: #333;
+  stroke: none; }
+
+#mermaid-1527158664234 .labelBox {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1527158664234 .labelText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1527158664234 .loopText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1527158664234 .loopLine {
+  stroke-width: 2;
+  stroke-dasharray: '2 2';
+  marker-end: 'url(#arrowhead)';
+  stroke: #CCCCFF; }
+
+#mermaid-1527158664234 .note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+
+#mermaid-1527158664234 .noteText {
+  fill: black;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 14px; }
+
+
+#mermaid-1527158664234 .section {
+  stroke: none;
+  opacity: 0.2; }
+
+#mermaid-1527158664234 .section0 {
+  fill: rgba(102, 102, 255, 0.49); }
+
+#mermaid-1527158664234 .section2 {
+  fill: #fff400; }
+
+#mermaid-1527158664234 .section1,
+#mermaid-1527158664234 .section3 {
+  fill: white;
+  opacity: 0.2; }
+
+#mermaid-1527158664234 .sectionTitle0 {
+  fill: #333; }
+
+#mermaid-1527158664234 .sectionTitle1 {
+  fill: #333; }
+
+#mermaid-1527158664234 .sectionTitle2 {
+  fill: #333; }
+
+#mermaid-1527158664234 .sectionTitle3 {
+  fill: #333; }
+
+#mermaid-1527158664234 .sectionTitle {
+  text-anchor: start;
+  font-size: 11px;
+  text-height: 14px; }
+
+
+#mermaid-1527158664234 .grid .tick {
+  stroke: lightgrey;
+  opacity: 0.3;
+  shape-rendering: crispEdges; }
+
+#mermaid-1527158664234 .grid path {
+  stroke-width: 0; }
+
+
+#mermaid-1527158664234 .today {
+  fill: none;
+  stroke: red;
+  stroke-width: 2px; }
+
+
+
+#mermaid-1527158664234 .task {
+  stroke-width: 2; }
+
+#mermaid-1527158664234 .taskText {
+  text-anchor: middle;
+  font-size: 11px; }
+
+#mermaid-1527158664234 .taskTextOutsideRight {
+  fill: black;
+  text-anchor: start;
+  font-size: 11px; }
+
+#mermaid-1527158664234 .taskTextOutsideLeft {
+  fill: black;
+  text-anchor: end;
+  font-size: 11px; }
+
+
+#mermaid-1527158664234 .taskText0,
+#mermaid-1527158664234 .taskText1,
+#mermaid-1527158664234 .taskText2,
+#mermaid-1527158664234 .taskText3 {
+  fill: white; }
+
+#mermaid-1527158664234 .task0,
+#mermaid-1527158664234 .task1,
+#mermaid-1527158664234 .task2,
+#mermaid-1527158664234 .task3 {
+  fill: #8a90dd;
+  stroke: #534fbc; }
+
+#mermaid-1527158664234 .taskTextOutside0,
+#mermaid-1527158664234 .taskTextOutside2 {
+  fill: black; }
+
+#mermaid-1527158664234 .taskTextOutside1,
+#mermaid-1527158664234 .taskTextOutside3 {
+  fill: black; }
+
+
+#mermaid-1527158664234 .active0,
+#mermaid-1527158664234 .active1,
+#mermaid-1527158664234 .active2,
+#mermaid-1527158664234 .active3 {
+  fill: #bfc7ff;
+  stroke: #534fbc; }
+
+#mermaid-1527158664234 .activeText0,
+#mermaid-1527158664234 .activeText1,
+#mermaid-1527158664234 .activeText2,
+#mermaid-1527158664234 .activeText3 {
+  fill: black !important; }
+
+
+#mermaid-1527158664234 .done0,
+#mermaid-1527158664234 .done1,
+#mermaid-1527158664234 .done2,
+#mermaid-1527158664234 .done3 {
+  stroke: grey;
+  fill: lightgrey;
+  stroke-width: 2; }
+
+#mermaid-1527158664234 .doneText0,
+#mermaid-1527158664234 .doneText1,
+#mermaid-1527158664234 .doneText2,
+#mermaid-1527158664234 .doneText3 {
+  fill: black !important; }
+
+
+#mermaid-1527158664234 .crit0,
+#mermaid-1527158664234 .crit1,
+#mermaid-1527158664234 .crit2,
+#mermaid-1527158664234 .crit3 {
+  stroke: #ff8888;
+  fill: red;
+  stroke-width: 2; }
+
+#mermaid-1527158664234 .activeCrit0,
+#mermaid-1527158664234 .activeCrit1,
+#mermaid-1527158664234 .activeCrit2,
+#mermaid-1527158664234 .activeCrit3 {
+  stroke: #ff8888;
+  fill: #bfc7ff;
+  stroke-width: 2; }
+
+#mermaid-1527158664234 .doneCrit0,
+#mermaid-1527158664234 .doneCrit1,
+#mermaid-1527158664234 .doneCrit2,
+#mermaid-1527158664234 .doneCrit3 {
+  stroke: #ff8888;
+  fill: lightgrey;
+  stroke-width: 2;
+  cursor: pointer;
+  shape-rendering: crispEdges; }
+
+#mermaid-1527158664234 .doneCritText0,
+#mermaid-1527158664234 .doneCritText1,
+#mermaid-1527158664234 .doneCritText2,
+#mermaid-1527158664234 .doneCritText3 {
+  fill: black !important; }
+
+#mermaid-1527158664234 .activeCritText0,
+#mermaid-1527158664234 .activeCritText1,
+#mermaid-1527158664234 .activeCritText2,
+#mermaid-1527158664234 .activeCritText3 {
+  fill: black !important; }
+
+#mermaid-1527158664234 .titleText {
+  text-anchor: middle;
+  font-size: 18px;
+  fill: black; }
+
+#mermaid-1527158664234 g.classGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 10px; }
+
+#mermaid-1527158664234 g.classGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1527158664234 g.classGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1527158664234 .classLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1527158664234 .classLabel .label {
+  fill: #9370DB;
+  font-size: 10px; }
+
+#mermaid-1527158664234 .relation {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1527158664234 #compositionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1527158664234 #compositionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1527158664234 #aggregationStart {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1527158664234 #aggregationEnd {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1527158664234 #dependencyStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1527158664234 #dependencyEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1527158664234 #extensionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1527158664234 #extensionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1527158664234 .commit-id,
+#mermaid-1527158664234 .commit-msg,
+#mermaid-1527158664234 .branch-label {
+  fill: lightgrey;
+  color: lightgrey; }
+</style><style>#mermaid-1527158664234 {
+    color: rgb(157, 165, 180);
+    font: normal normal normal normal 18px / 25.7143px system-ui;
+  }</style><g/><g class="grid" transform="translate(75, 194)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><path class="domain" stroke="#000" d="M0.5,-159V0.5H702.5V-159"/><g class="tick" opacity="1" transform="translate(0.5,0)"><line stroke="#000" y2="-159"/><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">W01</text></g><g class="tick" opacity="1" transform="translate(38.5,0)"><line stroke="#000" y2="-159"/><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">W02</text></g><g class="tick" opacity="1" transform="translate(76.5,0)"><line stroke="#000" y2="-159"/><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">W03</text></g><g class="tick" opacity="1" transform="translate(113.5,0)"><line stroke="#000" y2="-159"/><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">W04</text></g><g class="tick" opacity="1" transform="translate(151.5,0)"><line stroke="#000" y2="-159"/><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">W05</text></g><g class="tick" opacity="1" transform="translate(189.5,0)"><line stroke="#000" y2="-159"/><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">W06</text></g><g class="tick" opacity="1" transform="translate(227.5,0)"><line stroke="#000" y2="-159"/><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">W07</text></g><g class="tick" opacity="1" transform="translate(265.5,0)"><line stroke="#000" y2="-159"/><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">W08</text></g><g class="tick" opacity="1" transform="translate(302.5,0)"><line stroke="#000" y2="-159"/><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">W09</text></g><g class="tick" opacity="1" transform="translate(340.5,0)"><line stroke="#000" y2="-159"/><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">W10</text></g><g class="tick" opacity="1" transform="translate(378.5,0)"><line stroke="#000" y2="-159"/><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">W11</text></g><g class="tick" opacity="1" transform="translate(416.5,0)"><line stroke="#000" y2="-159"/><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">W12</text></g><g class="tick" opacity="1" transform="translate(454.5,0)"><line stroke="#000" y2="-159"/><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">W13</text></g><g class="tick" opacity="1" transform="translate(491.5,0)"><line stroke="#000" y2="-159"/><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">W14</text></g><g class="tick" opacity="1" transform="translate(529.5,0)"><line stroke="#000" y2="-159"/><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">W15</text></g><g class="tick" opacity="1" transform="translate(567.5,0)"><line stroke="#000" y2="-159"/><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">W16</text></g><g class="tick" opacity="1" transform="translate(605.5,0)"><line stroke="#000" y2="-159"/><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">W17</text></g><g class="tick" opacity="1" transform="translate(643.5,0)"><line stroke="#000" y2="-159"/><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">W18</text></g><g class="tick" opacity="1" transform="translate(680.5,0)"><line stroke="#000" y2="-159"/><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">W19</text></g></g><g><rect x="0" y="48" width="814.5" height="24" class="section section0"/><rect x="0" y="72" width="814.5" height="24" class="section section0"/><rect x="0" y="96" width="814.5" height="24" class="section section0"/><rect x="0" y="120" width="814.5" height="24" class="section section0"/><rect x="0" y="144" width="814.5" height="24" class="section section0"/><rect x="0" y="168" width="814.5" height="24" class="section section0"/></g><g><rect rx="3" ry="3" x="75" y="50" width="5" height="20" class="task  task0"/><rect rx="3" ry="3" x="275" y="74" width="5" height="20" class="task  task0"/><rect rx="3" ry="3" x="280" y="98" width="54" height="20" class="task  task0"/><rect rx="3" ry="3" x="334" y="122" width="432" height="20" class="task  task0"/><rect rx="3" ry="3" x="728" y="146" width="6" height="20" class="task  task0"/><rect rx="3" ry="3" x="766" y="170" width="11" height="20" class="task  crit0"/><text font-size="11" x="85" y="63.5" text-height="20" class="taskTextOutsideRight taskTextOutside0 ">sending application </text><text font-size="11" x="285" y="87.5" text-height="20" class="taskTextOutsideRight taskTextOutside0 ">being accepted      </text><text font-size="11" x="339" y="111.5" text-height="20" class="taskTextOutsideRight taskTextOutside0 ">confirming abstract </text><text font-size="11" x="550" y="135.5" text-height="20" class="taskText taskText0 ">procrastinating     </text><text font-size="11" x="739" y="159.5" text-height="20" class="taskTextOutsideRight taskTextOutside0 ">registering         </text><text font-size="11" x="761" y="183.5" text-height="20" class="taskTextOutsideLeft taskTextOutside0  critText0">actually working    </text></g><g><text x="10" y="122" class="sectionTitle sectionTitle0"/></g><g class="today"><line x1="780" x2="780" y1="25" y2="219" class="today"/></g><text x="426" y="25" class="titleText">Preparing my soap presentation</text><style type="text/css">.label { color: #000000 !important; } </style></svg>
