@@ -38,7 +38,7 @@
 <!--#########################################################################-->
 <!--#########################################################################-->
 
-			<section></section>
+			<section data-state="flush"></section>
 
 <!--#########################################################################-->
 
@@ -54,7 +54,7 @@
 
 <!--#########################################################################-->
 
-			<section><h1 style="font-family:monospace; font-size:5em">&lt;svg&gt;</h1>
+			<section data-state="flush"><h1 style="font-family:monospace; font-size:5em">&lt;svg&gt;</h1>
 <pre style="font-size: 0.5em;"><code class="xml" data-trim contenteditable style="word-wrap:break-word;">
 <svg viewBox="0 0 300 300" y="0px" x="0px" id="DBF_dotgrid_isolated">
   <style id="style" type="text/css">
@@ -1301,6 +1301,10 @@
 			Reveal.addEventListener( 'DBF', function() {
 				document.getElementById("DBF_dotgrid_isolated").classList.add('start');
 				console.log( 'DBF called!' );
+			});
+			Reveal.addEventListener( 'flush', function() {
+				document.getElementById("DBF_dotgrid_isolated").classList.remove('start');
+				console.log( 'flush called!' );
 			});
 
 		</script>
