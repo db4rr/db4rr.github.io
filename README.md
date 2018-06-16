@@ -11,4 +11,4 @@ They make things almost too easy.
 
 You can also navigate my projects via http://db4rr.github.io/
 
-**Have fun!**
+**Have fun! :)**
