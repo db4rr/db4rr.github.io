@@ -1,0 +1,69 @@
+<svg id="mermaid-1554497384047" width="100%" xmlns="http://www.w3.org/2000/svg" style="max-width: 488.078125px;" viewBox="0 0 488.078125 156">
+  <g transform="translate(-12, -12)">
+    <g class="output"><g class="clusters"/>
+      <g class="edgeLabels">
+        <g class="edgeLabel" transform="" style="opacity: 1;">
+          <g transform="translate(0,0)" class="label">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">
+                <span class="edgeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+        <g class="edgeLabel" transform="" style="opacity: 1;">
+          <g transform="translate(0,0)" class="label">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">
+                <span class="edgeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+        </g>
+      </g>
+      <g class="nodes">
+        <g class="node" id="id1" transform="translate(120.59375,42.5)" style="opacity: 1;"><rect rx="5" ry="5" x="-100.59375" y="-22.5" width="201.1875" height="45" style="fill:#fff;stroke:#000;stroke-width:4px;"/>
+          <g class="label" transform="translate(0,0)">
+            <g transform="translate(-90.59375,-12.5)">
+              <foreignObject width="181.1875" height="25">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Publishing engineering</div>
+              </foreignObject>
+            </g>
+          </g>
+        </g>
+        <g class="node" id="id2" transform="translate(381.6328125,42.5)" style="opacity: 1;"><rect rx="5" ry="5" x="-110.4453125" y="-22.5" width="220.890625" height="45" style="fill:#fff;stroke:#000;stroke-width:4px;"/>
+          <g class="label" transform="translate(0,0)">
+            <g transform="translate(-100.4453125,-12.5)">
+              <foreignObject width="200.890625" height="25">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Information Architecture</div>
+              </foreignObject>
+            </g>
+          </g>
+        </g>
+        <g class="node" id="id3" transform="translate(120.59375,137.5)" style="opacity: 1;"><rect rx="5" ry="5" x="-78.3671875" y="-22.5" width="156.734375" height="45" style="fill:#fff;stroke:#000;stroke-width:4px;"/>
+          <g class="label" transform="translate(0,0)">
+            <g transform="translate(-68.3671875,-12.5)">
+              <foreignObject width="136.734375" height="25">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Content Strategy</div>
+              </foreignObject>
+            </g>
+          </g>
+        </g>
+        <g class="node" id="id4" transform="translate(381.6328125,137.5)" style="opacity: 1;"><rect rx="5" ry="5" x="-75.109375" y="-22.5" width="150.21875" height="45" style="fill:#fff;stroke:#000;stroke-width:4px;"/>
+          <g class="label" transform="translate(0,0)">
+            <g transform="translate(-65.109375,-12.5)">
+              <foreignObject width="130.21875" height="25">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">User Experience</div>
+              </foreignObject>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <style type="text/css">
+    .label {
+      color: #000000 !important;
+    }
+  </style>
+</svg>
